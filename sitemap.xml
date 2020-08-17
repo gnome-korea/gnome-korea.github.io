@@ -8,6 +8,10 @@
   </url>
   
   <url>
+    <loc>http://gnome.or.kr/about/</loc>
+  </url>
+  
+  <url>
     <loc>http://gnome.or.kr/categories/</loc>
     <priority>0</priority>
   </url>
