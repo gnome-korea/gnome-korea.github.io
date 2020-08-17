@@ -2,3 +2,14 @@ baseURL = "http://gnome.or.kr"
 languageCode = "en-us"
 title = "그놈 한국(GNOME KOREA)"
 theme = "chunky-poster"
+sectionPagesMenu = "main"
+
+[params]
+  share = true
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    pre = "<i class='fa fa-heart'></i>"
+    url = "/about/"
