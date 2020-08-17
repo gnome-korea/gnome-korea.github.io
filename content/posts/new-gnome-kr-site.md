@@ -1,6 +1,8 @@
 ---
 title: "그놈 한국 사이트 개편 안내"
 date: 2020-08-16T22:17:43-07:00
+author: joone
+tags: ["news"]
 draft: false
 ---
 
