@@ -14,3 +14,5 @@ https://sites.google.com/site/gnomekr/home
 
 고맙습니다. 
 
+[댓글 남기기/보기](https://groups.google.com/g/gnome-kr/c/U2tIUENvTJ8)
+
