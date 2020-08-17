@@ -1,7 +1,7 @@
 baseURL = "http://gnome.or.kr"
 languageCode = "en-us"
 title = "그놈 한국(GNOME KOREA)"
-theme = "chunky-poster"
+theme = "ananke"
 sectionPagesMenu = "main"
 
 [params]

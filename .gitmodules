@@ -5,3 +5,6 @@
 	path = public
 	url = git@github.com:gnome-or-kr/gnome-or-kr.github.io.git
 	branch = master
+[submodule "themes/ananke"]
+	path = themes/ananke
+	url = https://github.com/budparr/gohugo-theme-ananke.git
