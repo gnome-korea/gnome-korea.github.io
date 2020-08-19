@@ -38,7 +38,8 @@ type: docs
 * https://twitter.com/planetgnome
 ### Bugzilla
 * https://bugzilla.gnome.org/
-
+### Gitlab
+* https://gitlab.gnome.org/
 {{< /columns >}}
 
 
