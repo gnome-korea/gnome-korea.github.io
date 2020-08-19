@@ -10,9 +10,8 @@ draft: false
 자체 홈페이지를 구축했습니다.
 
 이전 사이트를 계속 접속 가능합니다.
-https://sites.google.com/site/gnomekr/home
+* [https://sites.google.com/site/gnomekr/home](https://sites.google.com/site/gnomekr/home)
 
 고맙습니다. 
 
-[댓글 남기기/보기](https://groups.google.com/g/gnome-kr/c/U2tIUENvTJ8)
 

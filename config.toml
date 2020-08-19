@@ -1,15 +1,12 @@
 baseURL = "http://gnome.or.kr"
 languageCode = "en-us"
-title = "그놈 한국(GNOME KOREA)"
-theme = "ananke"
+title = "GNOME KOREA"
+theme = "book"
 sectionPagesMenu = "main"
 
 [params]
   share = true
+  BookLogo = 'gnome-kr.png'
+  BookMenuBundle = '/menu'
 
-[menu]
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    pre = "<i class='fa fa-heart'></i>"
-    url = "/about/"
+
