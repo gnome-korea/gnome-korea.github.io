@@ -17,41 +17,33 @@ type: docs
 {{< columns >}}
 
 ## 바깥고리
-
-### 그놈 한국 블로그
-* http://gnome-kr.blogspot.com/
-
-### 그놈 한국 Facebook
-* https://www.facebook.com/groups/gnomekorea/
-
-### 그놈 한국 GIT 저장소
-* https://github.com/gnome-korea
+* [그놈 한국 블로그](http://gnome-kr.blogspot.com/)
+* [그놈 한국 구글 그룹](https://groups.google.com/g/gnome-kr)
+* [그놈 한국 Facebook](https://www.facebook.com/groups/gnomekorea/)
+* [그놈 한국 GIT 저장소](https://github.com/gnome-korea)
 
 <--->
-## GNOME Project
-### GNOME
-* https://www.gnome.org/
-### Planet GNOME
-* https://planet.gnome.org/
-
-### Twitter
-* https://twitter.com/planetgnome
-### Bugzilla
-* https://bugzilla.gnome.org/
-### Gitlab
-* https://gitlab.gnome.org/
+### GNOME Project
+* [GNOME Project](https://www.gnome.org/)
+* [Planet GNOME](https://planet.gnome.org/)
+* [Twitter](https://twitter.com/planetgnome)
+* [Bugzilla](https://bugzilla.gnome.org/)
+* [Gitlab](https://gitlab.gnome.org/)
 {{< /columns >}}
 
 
 {{< columns >}}
-## IRC 접속
+### IRC 접속
 * irc.ozinger.org  #gnome 채널
 * irc.freenode.net #gnome-kr 채널
+### 자유소프트웨어 공동체
+* [한국 리눅스 문서화 프로젝트(KLDP)](https://kldp.org)
+* [한국 모질라 공동체](http://www.mozilla.or.kr)
+* [한국 우분투 공동체](https://www.ubuntu-kr.org/)
+
 <--->
-## GNOME Conference
-### GUADEC 2020
-* https://events.gnome.org/event/1/
-### GUADEC 2019
-* https://events.gnome.org/event/11/
+### GNOME Conference
+* [GUADEC 2020](https://events.gnome.org/event/1/)
+* [GUADEC 2019](https://events.gnome.org/event/11/)
 
 {{< /columns >}}
