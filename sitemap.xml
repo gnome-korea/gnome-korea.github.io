@@ -3,12 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://gnome.or.kr/tags/news/</loc>
+    <loc>http://gnome.or.kr/</loc>
     <lastmod>2020-08-16T22:17:43-07:00</lastmod>
   </url>
   
   <url>
     <loc>http://gnome.or.kr/posts/</loc>
+    <lastmod>2020-08-16T22:17:43-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gnome.or.kr/tags/news/</loc>
     <lastmod>2020-08-16T22:17:43-07:00</lastmod>
   </url>
   
@@ -23,32 +28,19 @@
   </url>
   
   <url>
-    <loc>http://gnome.or.kr/</loc>
-    <lastmod>2020-08-16T22:17:43-07:00</lastmod>
+    <loc>http://gnome.or.kr/docs/projects/</loc>
   </url>
   
   <url>
-    <loc>http://gnome.or.kr/posts/2019-gnome-kr-meeting/</loc>
-    <lastmod>2019-03-01T09:59:14-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://gnome.or.kr/tags/gnome3/</loc>
-    <lastmod>2011-04-10T10:33:12-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://gnome.or.kr/posts/2011-gnome3-launch-party/</loc>
-    <lastmod>2011-04-10T10:33:12-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://gnome.or.kr/about/</loc>
-    <priority>0</priority>
+    <loc>http://gnome.or.kr/docs/projects/gnome-kr-l10n/</loc>
   </url>
   
   <url>
     <loc>http://gnome.or.kr/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>http://gnome.or.kr/docs/</loc>
   </url>
   
 </urlset>

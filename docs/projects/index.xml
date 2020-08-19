@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GNOME KOREA</title>
+    <link>http://gnome.or.kr/docs/projects/</link>
+    <description>Recent content on GNOME KOREA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://gnome.or.kr/docs/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://gnome.or.kr/docs/projects/gnome-kr-l10n/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gnome.or.kr/docs/projects/gnome-kr-l10n/</guid>
+      <description>그놈 한글화 프로젝트 #   https://l10n.gnome.org/teams/ko/  </description>
+    </item>
+    
+  </channel>
+</rss>

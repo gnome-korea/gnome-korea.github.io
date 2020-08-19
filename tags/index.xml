@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on 그놈 한국(GNOME KOREA)</title>
+    <title>Tags on GNOME KOREA</title>
     <link>http://gnome.or.kr/tags/</link>
-    <description>Recent content in Tags on 그놈 한국(GNOME KOREA)</description>
+    <description>Recent content in Tags on GNOME KOREA</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 16 Aug 2020 22:17:43 -0700</lastBuildDate>
@@ -17,15 +17,6 @@
       <pubDate>Sun, 16 Aug 2020 22:17:43 -0700</pubDate>
       
       <guid>http://gnome.or.kr/tags/news/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>GNOME3</title>
-      <link>http://gnome.or.kr/tags/gnome3/</link>
-      <pubDate>Sun, 10 Apr 2011 10:33:12 -0700</pubDate>
-      
-      <guid>http://gnome.or.kr/tags/gnome3/</guid>
       <description></description>
     </item>
     
