@@ -3,7 +3,7 @@ title: HOME
 type: docs
 ---
 
-# 그놈 한국(GNOME KOREA)W
+# 그놈 한국(GNOME KOREA)
 ![GNOME3 Desktop image](featured-image@2x-1.png#center)
 
 그놈 한국 홈페이지에서 오신 것을 환영합니다!
