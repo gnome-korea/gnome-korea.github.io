@@ -5,8 +5,9 @@ theme = "book"
 sectionPagesMenu = "main"
 
 [params]
+  author = "GNOME KOREA"
   share = true
   BookLogo = 'gnome-kr.png'
   BookMenuBundle = '/menu'
-
+  Copyright = "2020 GNOME KOREA"
 
