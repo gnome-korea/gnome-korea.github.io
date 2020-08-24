@@ -1,26 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>News on GNOME KOREA</title>
-    <link>http://gnome.or.kr/posts/</link>
-    <description>Recent content in News on GNOME KOREA</description>
+    <title>2001 on GNOME KOREA</title>
+    <link>http://gnome.or.kr/tags/2001/</link>
+    <description>Recent content in 2001 on GNOME KOREA</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 16 Aug 2020 22:17:43 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 04 Aug 2001 22:17:43 -0700</lastBuildDate>
     
-	<atom:link href="http://gnome.or.kr/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://gnome.or.kr/tags/2001/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>그놈 한국 사이트 개편 안내</title>
-      <link>http://gnome.or.kr/posts/new-gnome-kr-site/</link>
-      <pubDate>Sun, 16 Aug 2020 22:17:43 -0700</pubDate>
-      
-      <guid>http://gnome.or.kr/posts/new-gnome-kr-site/</guid>
-      <description>지금까지 구글 사이트를 통해 그놈 한국 웹사이트를 제공했는데, 이번에 새롭게 자체 홈페이지를 구축했습니다.
-이전 사이트를 계속 접속 가능합니다.
- https://sites.google.com/site/gnomekr/home  고맙습니다.</description>
-    </item>
     
     <item>
       <title>Linux Programming by example</title>

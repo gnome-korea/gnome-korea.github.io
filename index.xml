@@ -23,6 +23,16 @@
     </item>
     
     <item>
+      <title>Linux Programming by example</title>
+      <link>http://gnome.or.kr/posts/archive_2001_0804_linux_programing_by_example/</link>
+      <pubDate>Sat, 04 Aug 2001 22:17:43 -0700</pubDate>
+      
+      <guid>http://gnome.or.kr/posts/archive_2001_0804_linux_programing_by_example/</guid>
+      <description>출처
+ 글쓴이 : 키눅스 (2001년 08월 04일 오후 12:57) 읽은수: 319 [ 문서 / 책소개 ] 제목 : Linux Programming by Example 저자 : Wall Kurt 출판사 : Que  제가 표지 디자인을 무척 맘에 들어하는 책입니다. 그동안 사놓고 보지 않고 있다가.. 어제부터 보기 시작했는데.. 내용이 정말 좋더군요. C 언어를 어느정도 아신다면 리눅스 프로그래밍에 대한 개념및 실전 응용을 하는데 많은도움이 될 것 같습니다.(원서지만 영어도 그리 어렵지 않게.. 쉽게 읽어갈수 있습니다.</description>
+    </item>
+    
+    <item>
       <title></title>
       <link>http://gnome.or.kr/docs/gnome_history/gimp_gtk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -35,6 +45,25 @@
 “나도, 대신에 리눅스용 포토샵 같은거 만들어보면 어떨까? 포토샵은 맥하고 윈도에서만 실행되잖아.”
 “좋은 생각이다. 우리 교수님한테 한번 이야기해보자.”
 “저희가 LISP 컴파일러 프로젝트 대신에 포토샵 같은 이미지 편집 프로그램을 한번 만들어보고 싶습니다.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://gnome.or.kr/docs/gnome_history/gnome_kr_home/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gnome.or.kr/docs/gnome_history/gnome_kr_home/</guid>
+      <description>그놈 한국 홈페이지 변천사 #  2007년 2월 20일 #  https://web.archive.org/web/20070220235717/http://gnome.or.kr/
+2006년 7월 11일 #  2003년 10월 30일 #  2002년 3월 30일 #  https://web.archive.org/web/20020524140742/http://gnome.or.kr/</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://gnome.or.kr/docs/gnome_history/korea/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gnome.or.kr/docs/gnome_history/korea/</guid>
+      <description>그놈 한국이 걸어온 길 #  작성 중&amp;hellip;</description>
     </item>
     
     <item>
