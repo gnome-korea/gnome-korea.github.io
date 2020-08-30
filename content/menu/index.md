@@ -10,3 +10,7 @@ headless: true
 - [한글화 프로젝트]({{< relref "/docs/projects/gnome-kr-l10n" >}})
 <br />
 
+- **GNOME 배우기(old)**
+- [처음 시작하기]({{< relref "/docs/learning_gnome/begin" >}})
+
+
