@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GNOME KOREA</title>
+    <link>http://gnome.or.kr/docs/learning_gnome/</link>
+    <description>Recent content on GNOME KOREA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://gnome.or.kr/docs/learning_gnome/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://gnome.or.kr/docs/learning_gnome/begin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gnome.or.kr/docs/learning_gnome/begin/</guid>
+      <description>처음 시작하시는분을 위한 가이드 #  이 페이지에서는, 그놈(GNOME) 데스크탑 환경을 기반으로 하는 소프트웨어의 개발이나, 그놈(GNOME)을 더욱 풍성하게 만들어주는 공헌을 해주실 분을 위한 기초적인 가이드라인을 제시합니다.
+2006년 4월 6일자로 나온 그놈(GNOME) 플랫폼 개관 (영문) 페이지를 통해, 그놈(GNOME) 데스크탑 환경을 구성하는 핵심 기술과, 내부 통신 방법, 데스크탑 편의성을 위한 기술등에 대해 학습하실 수 있습니다.
+그놈(GNOME) 데스크탑 환경에 공헌할 수 있는 방법들에 대한 요약 #  프로그래밍에 대한 지식이 필요없이, 아래와 같이 그놈(GNOME) 데스크탑 환경의 발전에 도움을 주실 수 있습니다:</description>
+    </item>
+    
+  </channel>
+</rss>
