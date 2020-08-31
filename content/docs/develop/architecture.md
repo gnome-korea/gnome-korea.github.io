@@ -72,4 +72,4 @@ GTK+ 에서 테마가 어떻게 동작하는지를 이해하기 위해서는 몇
 * GTK API 레퍼런스 : Styles 페이지에서 스타일에 대한 레퍼런스 매뉴얼을 보실 수 있습니다.
 * GTK API 레퍼런스 : Themeable Stock Icons 페이지에서 스톡 아이콘에 대한 레퍼런스 매뉴얼을 보실 수 있습니다.
 
-출처: https://web.archive.org/web/20070529152631/http://www.gnome.or.kr/c/portal/layout?p_l_id=PUB.1.43
+[출처](https://web.archive.org/web/20070529152631/http://www.gnome.or.kr/c/portal/layout?p_l_id=PUB.1.43)
