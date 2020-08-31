@@ -25,10 +25,9 @@ jobs:
       - name: Build website with hugo
         working-directory: src
         run: |
-          sudo apt-get update -q -y
-          sudo apt-get install -q -y hugo
+          yes | /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+          yes | brew install hugo
           hugo
-
       # Checkout destination repository
       - name: Checkout dest repo
         uses: actions/checkout@v2
