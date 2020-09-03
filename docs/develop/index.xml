@@ -16,9 +16,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://gnome.or.kr/docs/develop/architecture/</guid>
-      <description>작성 중입니다.
-그놈(GNOME) 플랫폼 아키텍쳐 개관 #  (그놈 홈페이지의 Architecture Overview (http://developer.gnome.org/arch/) 를 바탕으로 작성되었습니다.) 이 페이지에서는, 그놈(GNOME) 플랫폼에서 사용하는 구조/기술들에 대한 내용을 다루게 됩니다. 아래의 내용을 바탕으로, 전체적인 그놈 데스크탑 환경의 배경이 되는 아키텍쳐를 이해하여 사용자 / 어플리케이션 개발자들이 어떠한 방향으로 접근해나가야 할 것인지에 대한 사항을 다루게 됩니다.
-GTK+에 대하여 #  GTK+ 는 그놈(GNOME)이 사용하는 기본 위젯 툴킷(base widget toolkit, 주: 버튼, 스크롤바, 입력창등이 위젯에 해당합니다) 라이브러리 입니다.</description>
+      <description>그놈(GNOME) 플랫폼 아키텍쳐 개관 #  이 문서는 그놈 플랫폼에서 사용하는 구조/기술들에 대한 내용을 다루게 됩니다. 아래의 내용을 바탕으로, 전체적인 그놈 데스크탑 환경의 배경이 되는 아키텍쳐를 이해하여 사용자/어플리케이션 개발자들이 어떠한 방향으로 접근해나가야 할 것인지에 대한 사항을 다루게 됩니다.
+GTK+ #  GTK+ 는 그놈이 사용하는 기본 위젯 툴킷(base widget toolkit, 주: 버튼, 스크롤바, 입력창등이 위젯에 해당합니다) 라이브러리 입니다. 원래 GIMP 프로젝트로부터 파생되었고, 대부분의 코드는 C로 작성되었지만 수많은 언어 바인딩을 지원, C++, Python, JavaScript, Rust 등에서도 사용할 수 있습니다.</description>
     </item>
     
     <item>
