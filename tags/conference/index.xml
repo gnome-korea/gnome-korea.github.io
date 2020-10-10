@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>conference on GNOME KOREA</title>
+    <link>http://gnome.or.kr/tags/conference/</link>
+    <description>Recent content in conference on GNOME KOREA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 09 Oct 2020 02:20:00 +0900</lastBuildDate><atom:link href="http://gnome.or.kr/tags/conference/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>그놈 아시아 서밋 2020 (온라인) 개최 </title>
+      <link>http://gnome.or.kr/posts/gnome-asia-2020-promote/</link>
+      <pubDate>Fri, 09 Oct 2020 02:20:00 +0900</pubDate>
+      
+      <guid>http://gnome.or.kr/posts/gnome-asia-2020-promote/</guid>
+      <description>번역: 성대현(DaeHyun Sung)
+참고 #  GNOME ASIA 2020 Call for papers is now Open!
+GNOME.Asia Summit 2020 홈페이지
+그놈 아시아 2020 발표 제안이 열렸습니다 #  그놈 아시아 서밋 2020(GNOME.Asia Summit 2020)에서 이 글을 보시는 분들에게 발표자로 참여하도록 초대합니다. 컨퍼런스는 2020년 11월 24일부터 26일, 3일간 열립니다.
+발표 제안은 다음의 링크에서 제출하시면 됩니다. https://events.gnome.org/event/24/abstracts/
+코로나19(COVID-19)의 전 세계적인 확산으로, 모든 회의가 온라인으로 진행 될 예정입니다.
+그놈 아시아 서밋(GNOME.Asia Summit)은 아시아에서 개최되는 연례 그놈 컨퍼런스입니다.</description>
+    </item>
+    
+  </channel>
+</rss>
