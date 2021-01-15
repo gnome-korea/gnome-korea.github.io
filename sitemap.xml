@@ -3,6 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://gnome.or.kr/</loc>
+    <lastmod>2021-01-14T22:17:43-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gnome.or.kr/posts/</loc>
+    <lastmod>2021-01-14T22:17:43-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gnome.or.kr/tags/news/</loc>
+    <lastmod>2021-01-14T22:17:43-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gnome.or.kr/tags/</loc>
+    <lastmod>2021-01-14T22:17:43-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gnome.or.kr/posts/history_of_ghome/</loc>
+    <lastmod>2021-01-14T22:17:43-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://gnome.or.kr/tags/conference/</loc>
     <lastmod>2020-10-09T02:20:00+09:00</lastmod>
   </url>
@@ -13,27 +38,7 @@
   </url>
   
   <url>
-    <loc>http://gnome.or.kr/</loc>
-    <lastmod>2020-10-09T02:20:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://gnome.or.kr/posts/</loc>
-    <lastmod>2020-10-09T02:20:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://gnome.or.kr/tags/news/</loc>
-    <lastmod>2020-10-09T02:20:00+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://gnome.or.kr/tags/summit/</loc>
-    <lastmod>2020-10-09T02:20:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://gnome.or.kr/tags/</loc>
     <lastmod>2020-10-09T02:20:00+09:00</lastmod>
   </url>
   

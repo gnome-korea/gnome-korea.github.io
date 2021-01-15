@@ -6,7 +6,16 @@
     <description>Recent content in Tags on GNOME KOREA</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Oct 2020 02:20:00 +0900</lastBuildDate><atom:link href="http://gnome.or.kr/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 Jan 2021 22:17:43 -0700</lastBuildDate><atom:link href="http://gnome.or.kr/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>news</title>
+      <link>http://gnome.or.kr/tags/news/</link>
+      <pubDate>Thu, 14 Jan 2021 22:17:43 -0700</pubDate>
+      
+      <guid>http://gnome.or.kr/tags/news/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>conference</title>
       <link>http://gnome.or.kr/tags/conference/</link>
@@ -22,15 +31,6 @@
       <pubDate>Fri, 09 Oct 2020 02:20:00 +0900</pubDate>
       
       <guid>http://gnome.or.kr/tags/gnomeasia/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>news</title>
-      <link>http://gnome.or.kr/tags/news/</link>
-      <pubDate>Fri, 09 Oct 2020 02:20:00 +0900</pubDate>
-      
-      <guid>http://gnome.or.kr/tags/news/</guid>
       <description></description>
     </item>
     
