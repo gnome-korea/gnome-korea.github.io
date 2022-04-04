@@ -45,6 +45,8 @@ type: docs
 
 <--->
 ### GNOME Conference
+* [GUADEC 2022](https://events.gnome.org/event/77/)
+* [GUADEC 2021](https://events.gnome.org/event/9/)
 * [GUADEC 2020](https://events.gnome.org/event/1/)
 * [GUADEC 2019](https://events.gnome.org/event/11/)
 
