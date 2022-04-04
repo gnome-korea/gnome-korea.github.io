@@ -9,5 +9,5 @@ sectionPagesMenu = "main"
   share = true
   BookLogo = 'gnome-kr.png'
   BookMenuBundle = '/menu'
-  Copyright = "2020 GNOME KOREA"
+  Copyright = "2002-2022 GNOME KOREA"
 
