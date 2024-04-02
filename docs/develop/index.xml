@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GNOME KOREA</title>
+    <link>http://gnome.or.kr/docs/develop/</link>
+    <description>Recent content on GNOME KOREA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://gnome.or.kr/docs/develop/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://gnome.or.kr/docs/develop/begin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gnome.or.kr/docs/develop/begin/</guid>
+      <description>처음 시작하시는분을 위한 가이드 # 이 페이지에서는, 그놈(GNOME) 데스크탑 환경을 기반으로 하는 소프트웨어의 개발이나, 그놈(GNOME)을 더욱 풍성하게 만들어주는 공헌을 해주실 분을 위한 기초적인 가이드라인을 제시합니다.
+그놈(GNOME) 프로그램 개발 개요 페이지를 통해, 그놈(GNOME) 데스크탑 환경을 구성하는 핵심 기술과, 내부 통신 방법, 데스크탑 편의성을 위한 기술등에 대해 학습하실 수 있습니다.
+그놈(GNOME) 데스크탑 환경에 공헌할 수 있는 방법들에 대한 요약 # 프로그래밍에 대한 지식이 필요없이, 아래와 같이 그놈(GNOME) 데스크탑 환경의 발전에 도움을 주실 수 있습니다:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://gnome.or.kr/docs/develop/i18n/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gnome.or.kr/docs/develop/i18n/</guid>
+      <description>오래된 문서입니다. 업데이트 예정입니다.
+Gettext를 사용한 I18N 학습서 # 이 페이지에서는 GNU/Gettext 를 사용하여 Gtk+ 기반의 프로그램을 국제화시키는 방법에 대하여 언급하고자 한다.
+GNU gettext의 라이센스에 대하여 # GNU Gettext의 라이센스는 GPL이다, 허나 GPL은 Gettext PO파일을 다루는 프로그램에 적용되고, 프로그래밍에 사용되는 libintl 은 LGPL로 관리되고 있다. 인터페이스인 libintl.h 는 glibc에 적용되어 있기때문에, 이들 코드를 상용 소프트웨어를 만드는데 사용해도 상관이 없다고 할 수 있다.
+I18n, l10n 에 대하여 # 이 부분에 대해 더욱 자세한 사항을 알고 싶으면 다음의 페이지를 참고하길 바란다:</description>
+    </item>
+    
+    <item>
+      <title>그놈(GNOME) 플랫폼 아키텍쳐 개관</title>
+      <link>http://gnome.or.kr/docs/develop/architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gnome.or.kr/docs/develop/architecture/</guid>
+      <description>그놈(GNOME) 플랫폼 아키텍쳐 개관 # 이 문서는 그놈 플랫폼에서 사용하는 구조/기술들에 대한 내용을 다루게 됩니다. 아래의 내용을 바탕으로, 전체적인 그놈 데스크탑 환경의 배경이 되는 아키텍쳐를 이해하여 사용자/어플리케이션 개발자들이 어떠한 방향으로 접근해나가야 할 것인지에 대한 사항을 다루게 됩니다.
+GTK+ # GTK+ 는 그놈이 사용하는 기본 위젯 툴킷(base widget toolkit, 주: 버튼, 스크롤바, 입력창등이 위젯에 해당합니다) 라이브러리 입니다. 원래 GIMP 프로젝트로부터 파생되었고, 대부분의 코드는 C로 작성되었지만 수많은 언어 바인딩을 지원, C++, Python, JavaScript, Rust 등에서도 사용할 수 있습니다.</description>
+    </item>
+    
+  </channel>
+</rss>

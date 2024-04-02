@@ -1,4 +1,3 @@
-![CI](https://github.com/gnome-korea/gnome-kr-web/workflows/CI/badge.svg)   
-# gnome-kr-web
-Website for GNOME KOREA
-* https://gnome.or.kr
+# gnome.or.kr 웹 페이지
+
+[Hugo](https://gohugo.io/)를 사용합니다.

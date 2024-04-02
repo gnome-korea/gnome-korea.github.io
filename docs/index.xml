@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docs on GNOME KOREA</title>
+    <link>http://gnome.or.kr/docs/</link>
+    <description>Recent content in Docs on GNOME KOREA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://gnome.or.kr/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://gnome.or.kr/docs/gnome_history/gimp_gtk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gnome.or.kr/docs/gnome_history/gimp_gtk/</guid>
+      <description>그놈 프로젝트는 김프라는 그림 편집 및 그리기 도구 개발에서 시작한다. 아래 만화를 통해 김프 프로젝트의 시작과 김프에서 어떻게 Gtk+ 프로젝트가 시작되었는지 확인할 수 있다.
+김프(GIMP)의 탄생 # 1995년 스펜서 킴벨(Spencer Kimball)과 피터 매티스(Peter Mattis)는 UC 버클리에서 전산학을 공부하고 있었다.
+“LISP 컴파일러 과제 시작했어?”
+“컴파일러 보다 다른 것을 만들어보고 싶어.”
+“나도, 대신에 리눅스용 포토샵 같은거 만들어보면 어떨까? 포토샵은 맥하고 윈도에서만 실행되잖아.”
+“좋은 생각이다. 우리 교수님한테 한번 이야기해보자.”
+“저희가 LISP 컴파일러 프로젝트 대신에 포토샵 같은 이미지 편집 프로그램을 한번 만들어보고 싶습니다.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://gnome.or.kr/docs/gnome_history/gnome_kr_home/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gnome.or.kr/docs/gnome_history/gnome_kr_home/</guid>
+      <description>그놈 한국 홈페이지 변천사 # 2007년 2월 20일 # https://web.archive.org/web/20070220235717/http://gnome.or.kr/
+2006년 7월 11일 # 2003년 10월 30일 # 2002년 3월 30일 # https://web.archive.org/web/20020524140742/http://gnome.or.kr/</description>
+    </item>
+    
+    <item>
+      <title>HOME</title>
+      <link>http://gnome.or.kr/docs/gnome_history/korea/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gnome.or.kr/docs/gnome_history/korea/</guid>
+      <description>그놈 한국(GNOME KOREA) # 그놈 한국 홈페이지에서 오신 것을 환영합니다!
+그놈(GNOME) 프로젝트는 자유롭게 소소코드를 고치고 배포할 수 있으며 누구나 개발에 참여할 수 있는 운영체제 데스크탑 환경과 어플리케이션 프레임워크를 만들고 있습니다.
+그놈은 GNU 프로젝트의 일부이며, 자유 소프트웨어입니다(흔히, 오픈소스 소프트웨어라고 불립니다). 그놈은 BSD 유닉스와 우분투, 페도라와 같은 GNU/리눅스 배포본에서 사용할 수 있으며, 다른 여러 유닉스 시스템에서도 작동합니다. 또한 그놈 애플리케이션 프레임워크는 윈도와 매킨토시 OSX를 지원하고 있어서, 한번 개발한 그놈 애플리케이션을 여러 운영체제용으로 컴파일해서 실행할 수 있습니다.</description>
+    </item>
+    
+  </channel>
+</rss>

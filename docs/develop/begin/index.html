@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="처음 시작하시는분을 위한 가이드 # 이 페이지에서는, 그놈(GNOME) 데스크탑 환경을 기반으로 하는 소프트웨어의 개발이나, 그놈(GNOME)을 더욱 풍성하게 만들어주는 공헌을 해주실 분을 위한 기초적인 가이드라인을 제시합니다.
+그놈(GNOME) 프로그램 개발 개요 페이지를 통해, 그놈(GNOME) 데스크탑 환경을 구성하는 핵심 기술과, 내부 통신 방법, 데스크탑 편의성을 위한 기술등에 대해 학습하실 수 있습니다.
+그놈(GNOME) 데스크탑 환경에 공헌할 수 있는 방법들에 대한 요약 # 프로그래밍에 대한 지식이 필요없이, 아래와 같이 그놈(GNOME) 데스크탑 환경의 발전에 도움을 주실 수 있습니다:">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="" />
+<meta property="og:description" content="처음 시작하시는분을 위한 가이드 # 이 페이지에서는, 그놈(GNOME) 데스크탑 환경을 기반으로 하는 소프트웨어의 개발이나, 그놈(GNOME)을 더욱 풍성하게 만들어주는 공헌을 해주실 분을 위한 기초적인 가이드라인을 제시합니다.
+그놈(GNOME) 프로그램 개발 개요 페이지를 통해, 그놈(GNOME) 데스크탑 환경을 구성하는 핵심 기술과, 내부 통신 방법, 데스크탑 편의성을 위한 기술등에 대해 학습하실 수 있습니다.
+그놈(GNOME) 데스크탑 환경에 공헌할 수 있는 방법들에 대한 요약 # 프로그래밍에 대한 지식이 필요없이, 아래와 같이 그놈(GNOME) 데스크탑 환경의 발전에 도움을 주실 수 있습니다:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://gnome.or.kr/docs/develop/begin/" /><meta property="article:section" content="docs" />
+
+
+
+<title>Begin | GNOME KOREA</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.d08be657f4d0d61b509ac06e1059e92fd1c66f15535a6bd4cee27e19935f34ae.css" integrity="sha256-0IvmV/TQ1htQmsBuEFnpL9HGbxVTWmvUzuJ&#43;GZNfNK4=">
+<script defer src="/en.search.min.eb9e3f71eadd4f3091fb4d17e5ae594efe097a3bfc2741a4eb6968083e73b5d9.js" integrity="sha256-654/cerdTzCR&#43;00X5a5ZTv4Jejv8J0Gk62loCD5ztdk="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><img src="/gnome-kr.png" alt="Logo" /><span>GNOME KOREA</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/" >
+        새소식
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+
+  <ul>
+<li>
+<p><strong>GNOME</strong></p>
+</li>
+<li>
+<p><a href="/docs/gnome_history/korea/">그놈 한국</a></p>
+</li>
+<li>
+<p><a href="/docs/gnome_history/gimp_gtk/">GIMP와 GTK+의 역사</a></p>
+</li>
+<li>
+<p><a href="/docs/gnome_history/gnome_kr_home/">그놈 한국 홈페이지 변천사</a></p>
+</li>
+<li>
+<p><strong>Projects</strong></p>
+</li>
+<li>
+<p><a href="/docs/projects/gnome-kr-l10n/">한글화 프로젝트</a>
+<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p><strong>그놈 개발하기</strong></p>
+</li>
+<li>
+<p><a href="https://developer.gnome.org/">그놈 개발 센터</a></p>
+</li>
+<li>
+<p><a href="/docs/develop/begin/"class=active>개발 시작하기</a></p>
+</li>
+<li>
+<p><a href="/docs/develop/architecture/">그놈 플랫폼 아키텍쳐 개관</a></p>
+</li>
+<li>
+<p><a href="/docs/develop/i18n/">국제화(I18n) 가이드</a></p>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Begin</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#처음-시작하시는분을-위한-가이드">처음 시작하시는분을 위한 가이드</a>
+      <ul>
+        <li><a href="#그놈gnome-데스크탑-환경에-공헌할-수-있는-방법들에-대한-요약">그놈(GNOME) 데스크탑 환경에 공헌할 수 있는 방법들에 대한 요약</a></li>
+        <li><a href="#그놈-개발자-플랫폼-라이브러리api-문서에-대하여">그놈 개발자 플랫폼 라이브러리(API) 문서에 대하여</a></li>
+        <li><a href="#기타-도움을-받을-수-있는-문서에-대하여">기타 도움을 받을 수 있는 문서에 대하여</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h2 id="처음-시작하시는분을-위한-가이드">
+  처음 시작하시는분을 위한 가이드
+  <a class="anchor" href="#%ec%b2%98%ec%9d%8c-%ec%8b%9c%ec%9e%91%ed%95%98%ec%8b%9c%eb%8a%94%eb%b6%84%ec%9d%84-%ec%9c%84%ed%95%9c-%ea%b0%80%ec%9d%b4%eb%93%9c">#</a>
+</h2>
+<p>이 페이지에서는, 그놈(GNOME) 데스크탑 환경을 기반으로 하는 소프트웨어의 개발이나, 그놈(GNOME)을 더욱 풍성하게 만들어주는 공헌을 해주실 분을 위한 기초적인 가이드라인을 제시합니다.</p>
+<p><a href="https://developer.gnome.org/platform-overview/unstable/">그놈(GNOME) 프로그램 개발 개요</a> 페이지를 통해, 그놈(GNOME) 데스크탑 환경을 구성하는 핵심 기술과, 내부 통신 방법, 데스크탑 편의성을 위한 기술등에 대해 학습하실 수 있습니다.</p>
+<h3 id="그놈gnome-데스크탑-환경에-공헌할-수-있는-방법들에-대한-요약">
+  그놈(GNOME) 데스크탑 환경에 공헌할 수 있는 방법들에 대한 요약
+  <a class="anchor" href="#%ea%b7%b8%eb%86%88gnome-%eb%8d%b0%ec%8a%a4%ed%81%ac%ed%83%91-%ed%99%98%ea%b2%bd%ec%97%90-%ea%b3%b5%ed%97%8c%ed%95%a0-%ec%88%98-%ec%9e%88%eb%8a%94-%eb%b0%a9%eb%b2%95%eb%93%a4%ec%97%90-%eb%8c%80%ed%95%9c-%ec%9a%94%ec%95%bd">#</a>
+</h3>
+<p>프로그래밍에 대한 지식이 필요없이, 아래와 같이 그놈(GNOME) 데스크탑 환경의 발전에 도움을 주실 수 있습니다:</p>
+<p>여러분이 사용하시는 그놈(GNOME) 플랫폼의 소프트웨어에 대한 문제를 발견하거나, 좀 더 나은 방향으로의 변화를 위하여 <a href="https://gitlab.gnome.org/GNOME">그놈 버그 트래커</a>를 통해 버그를 보고할 수 있습니다. 버그 보고에 대한 자세한 사항을 <a href="https://wiki.gnome.org/GitLab">버그 보고 방법(영문)</a> 문서를 통해 알 수 있습니다.</p>
+<p>그놈(GNOME) 플랫폼에서 동작하는 소프트웨어들의 메뉴나, 대화창에 적혀있는 메시지나, 프로그램 사용에 도움을 주는 문서들을 작성하거나, 번역하는 것으로도 도움을 줄 수 있습니다. 어렵게 생각하지 마세요! 그놈 한국 irc 채널에 오시면 그것에 관련된 대화를 접하시고, 도움을 주시는데 보다 손쉬운 방법을 알 수 있습니다.</p>
+<p>프로그래밍에 대한 지식이 있으시다면, 다음과 같은 방법으로 도움을 주실 수 있습니다:</p>
+<p>현재 그놈(GNOME) 프로젝트의 진행 상태는 <a href="https://wiki.gnome.org/ReleasePlanning">여기</a>에서 보실 수 있습니다. 언급한 페이지에는 현재 진행중이거나, 또는 개선해야 할 사항 (TODO)과 함께 그놈 프로젝트의 여러가지 컴포넌트의 개발에 관련된 연락처 등을 다루고 있습니다. 이곳을 통해, 지금 어디에, 어떤 것을 도울 수 있는지 손쉽게 알 수 있습니다.</p>
+<p>그 밖에도, 여러가지 컴포넌트들에 대한 테스트, 또는 버그 보고등을 통해서도 도움을 줄 수 있습니다. 최신의 그놈(GNOME) 프로젝트의 컴포넌트들을 <a href="https://gitlab.gnome.org/GNOME">GNOME gitlab</a>를 통해 접근할 수 있습니다.</p>
+<p>그놈 개발 환경의 발전을 위해, <a href="https://wiki.gnome.org/DocumentationProject/">그놈 문서화 프로젝트</a>에도 참여하실 수 있습니다.</p>
+<h3 id="그놈-개발자-플랫폼-라이브러리api-문서에-대하여">
+  그놈 개발자 플랫폼 라이브러리(API) 문서에 대하여
+  <a class="anchor" href="#%ea%b7%b8%eb%86%88-%ea%b0%9c%eb%b0%9c%ec%9e%90-%ed%94%8c%eb%9e%ab%ed%8f%bc-%eb%9d%bc%ec%9d%b4%eb%b8%8c%eb%9f%ac%eb%a6%acapi-%eb%ac%b8%ec%84%9c%ec%97%90-%eb%8c%80%ed%95%98%ec%97%ac">#</a>
+</h3>
+<p>API 문서를 보기 위해, 첫째로 <a href="https://wiki.gnome.org/Apps/Devhelp">DevHelp</a>를 사용하는 방법이 있습니다. 이 프로그램을 사용하여, 자신이 사용하는 현재 버전의 라이브러리에 대한 문서를 읽고, 검색할 수 있습니다. 또한, <a href="https://developer.gnome.org/references">API 참고서</a> 웹 페이지를 통해 그놈(GNOME) 플랫폼 기반의 프로그램을 작성하는데 도움을 줄 수 있는 최신 API 문서를 만나실 수 있습니다.</p>
+<h3 id="기타-도움을-받을-수-있는-문서에-대하여">
+  기타 도움을 받을 수 있는 문서에 대하여
+  <a class="anchor" href="#%ea%b8%b0%ed%83%80-%eb%8f%84%ec%9b%80%ec%9d%84-%eb%b0%9b%ec%9d%84-%ec%88%98-%ec%9e%88%eb%8a%94-%eb%ac%b8%ec%84%9c%ec%97%90-%eb%8c%80%ed%95%98%ec%97%ac">#</a>
+</h3>
+<p>라이브러리 API에 대한 문서이외에도, <a href="https://developer.gnome.org/guides">그놈 개발 안내서</a> 와 <a href="https://developer.gnome.org/gnome-devel-demos/stable/beginner.js.html.ko">초보자 지침서 및 예제 코드</a>를 통해 좀 더 손쉽게 그놈(GNOME) 프로그래밍을 배울 수 있습니다.</p>
+<p>알림: 이 글은 <a href="https://web.archive.org/web/20070529203803/http://www.gnome.or.kr/c/portal/layout?p_l_id=PUB.1.42">원본 글</a>을 수정한 것입니다.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+    <div style="text-align: center" >
+    <p><span class = 'year'>2020</span>&nbsp;GNOME KOREA.
+      
+    </p>
+  </div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#처음-시작하시는분을-위한-가이드">처음 시작하시는분을 위한 가이드</a>
+      <ul>
+        <li><a href="#그놈gnome-데스크탑-환경에-공헌할-수-있는-방법들에-대한-요약">그놈(GNOME) 데스크탑 환경에 공헌할 수 있는 방법들에 대한 요약</a></li>
+        <li><a href="#그놈-개발자-플랫폼-라이브러리api-문서에-대하여">그놈 개발자 플랫폼 라이브러리(API) 문서에 대하여</a></li>
+        <li><a href="#기타-도움을-받을-수-있는-문서에-대하여">기타 도움을 받을 수 있는 문서에 대하여</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2001 on GNOME KOREA</title>
+    <link>http://gnome.or.kr/tags/2001/</link>
+    <description>Recent content in 2001 on GNOME KOREA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 04 Aug 2001 22:17:43 -0700</lastBuildDate><atom:link href="http://gnome.or.kr/tags/2001/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux Programming by example</title>
+      <link>http://gnome.or.kr/posts/archive_2001_0804_linux_programing_by_example/</link>
+      <pubDate>Sat, 04 Aug 2001 22:17:43 -0700</pubDate>
+      
+      <guid>http://gnome.or.kr/posts/archive_2001_0804_linux_programing_by_example/</guid>
+      <description>출처
+글쓴이 : 키눅스 (2001년 08월 04일 오후 12:57) 읽은수: 319 [ 문서 / 책소개 ] 제목 : Linux Programming by Example 저자 : Wall Kurt 출판사 : Que 제가 표지 디자인을 무척 맘에 들어하는 책입니다. 그동안 사놓고 보지 않고 있다가.. 어제부터 보기 시작했는데.. 내용이 정말 좋더군요. C 언어를 어느정도 아신다면 리눅스 프로그래밍에 대한 개념및 실전 응용을 하는데 많은도움이 될 것 같습니다.(원서지만 영어도 그리 어렵지 않게.. 쉽게 읽어갈수 있습니다.)
+이 책은 C언어를 중심으로 설명하고 있어 리눅스 시스템 프로그래밍과 어플리케이션 개발의 특화된 리눅스 프로그래밍 관련 지식이 없더라도 쉽게 접근할 수 있다.</description>
+    </item>
+    
+  </channel>
+</rss>

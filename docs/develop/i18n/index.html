@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="오래된 문서입니다. 업데이트 예정입니다.
+Gettext를 사용한 I18N 학습서 # 이 페이지에서는 GNU/Gettext 를 사용하여 Gtk&#43; 기반의 프로그램을 국제화시키는 방법에 대하여 언급하고자 한다.
+GNU gettext의 라이센스에 대하여 # GNU Gettext의 라이센스는 GPL이다, 허나 GPL은 Gettext PO파일을 다루는 프로그램에 적용되고, 프로그래밍에 사용되는 libintl 은 LGPL로 관리되고 있다. 인터페이스인 libintl.h 는 glibc에 적용되어 있기때문에, 이들 코드를 상용 소프트웨어를 만드는데 사용해도 상관이 없다고 할 수 있다.
+I18n, l10n 에 대하여 # 이 부분에 대해 더욱 자세한 사항을 알고 싶으면 다음의 페이지를 참고하길 바란다:">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="" />
+<meta property="og:description" content="오래된 문서입니다. 업데이트 예정입니다.
+Gettext를 사용한 I18N 학습서 # 이 페이지에서는 GNU/Gettext 를 사용하여 Gtk&#43; 기반의 프로그램을 국제화시키는 방법에 대하여 언급하고자 한다.
+GNU gettext의 라이센스에 대하여 # GNU Gettext의 라이센스는 GPL이다, 허나 GPL은 Gettext PO파일을 다루는 프로그램에 적용되고, 프로그래밍에 사용되는 libintl 은 LGPL로 관리되고 있다. 인터페이스인 libintl.h 는 glibc에 적용되어 있기때문에, 이들 코드를 상용 소프트웨어를 만드는데 사용해도 상관이 없다고 할 수 있다.
+I18n, l10n 에 대하여 # 이 부분에 대해 더욱 자세한 사항을 알고 싶으면 다음의 페이지를 참고하길 바란다:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://gnome.or.kr/docs/develop/i18n/" /><meta property="article:section" content="docs" />
+
+
+
+<title>I18n | GNOME KOREA</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.d08be657f4d0d61b509ac06e1059e92fd1c66f15535a6bd4cee27e19935f34ae.css" integrity="sha256-0IvmV/TQ1htQmsBuEFnpL9HGbxVTWmvUzuJ&#43;GZNfNK4=">
+<script defer src="/en.search.min.eb9e3f71eadd4f3091fb4d17e5ae594efe097a3bfc2741a4eb6968083e73b5d9.js" integrity="sha256-654/cerdTzCR&#43;00X5a5ZTv4Jejv8J0Gk62loCD5ztdk="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><img src="/gnome-kr.png" alt="Logo" /><span>GNOME KOREA</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/" >
+        새소식
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+
+  <ul>
+<li>
+<p><strong>GNOME</strong></p>
+</li>
+<li>
+<p><a href="/docs/gnome_history/korea/">그놈 한국</a></p>
+</li>
+<li>
+<p><a href="/docs/gnome_history/gimp_gtk/">GIMP와 GTK+의 역사</a></p>
+</li>
+<li>
+<p><a href="/docs/gnome_history/gnome_kr_home/">그놈 한국 홈페이지 변천사</a></p>
+</li>
+<li>
+<p><strong>Projects</strong></p>
+</li>
+<li>
+<p><a href="/docs/projects/gnome-kr-l10n/">한글화 프로젝트</a>
+<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p><strong>그놈 개발하기</strong></p>
+</li>
+<li>
+<p><a href="https://developer.gnome.org/">그놈 개발 센터</a></p>
+</li>
+<li>
+<p><a href="/docs/develop/begin/">개발 시작하기</a></p>
+</li>
+<li>
+<p><a href="/docs/develop/architecture/">그놈 플랫폼 아키텍쳐 개관</a></p>
+</li>
+<li>
+<p><a href="/docs/develop/i18n/"class=active>국제화(I18n) 가이드</a></p>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>I18n</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#gnu-gettext의-라이센스에-대하여">GNU gettext의 라이센스에 대하여</a></li>
+    <li><a href="#i18n-l10n-에-대하여">I18n, l10n 에 대하여</a></li>
+    <li><a href="#프로그래머의-접근-방법">프로그래머의 접근 방법</a>
+      <ul>
+        <li><a href="#준비단계">준비단계</a></li>
+        <li><a href="#코드-적용">코드 적용</a></li>
+        <li><a href="#po-파일-추출">PO 파일 추출</a></li>
+        <li><a href="#po-파일의-수정">PO 파일의 수정</a></li>
+        <li><a href="#po에서-mo로-변환">PO에서 MO로 변환</a></li>
+        <li><a href="#실행을-위한-적용">실행을 위한 적용</a></li>
+      </ul>
+    </li>
+    <li><a href="#libglade와-gettext-그리고-intltool">libglade와 gettext, 그리고 intltool</a>
+      <ul>
+        <li><a href="#glade-xml-로부터-메시지-추출">glade-xml 로부터 메시지 추출</a></li>
+        <li><a href="#메인-프로그램의-수정">메인 프로그램의 수정</a></li>
+        <li><a href="#po-파일-생성-그리고-결과">PO 파일 생성, 그리고 결과</a></li>
+      </ul>
+    </li>
+    <li><a href="#기타-주요-사항">기타 주요 사항</a>
+      <ul>
+        <li><a href="#printf-와-출력순서에-대하여">printf() 와 출력순서에 대하여</a></li>
+        <li><a href="#배열에-gettext-를-적용하려면-gettext_noop-을-사용한다">배열에 gettext 를 적용하려면 gettext_noop() 을 사용한다</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><p>오래된 문서입니다. 업데이트 예정입니다.</p>
+<h1 id="gettext를-사용한-i18n-학습서">
+  Gettext를 사용한 I18N 학습서
+  <a class="anchor" href="#gettext%eb%a5%bc-%ec%82%ac%ec%9a%a9%ed%95%9c-i18n-%ed%95%99%ec%8a%b5%ec%84%9c">#</a>
+</h1>
+<p>이 페이지에서는 GNU/Gettext 를 사용하여 Gtk+ 기반의 프로그램을 국제화시키는 방법에 대하여 언급하고자 한다.</p>
+<h2 id="gnu-gettext의-라이센스에-대하여">
+  GNU gettext의 라이센스에 대하여
+  <a class="anchor" href="#gnu-gettext%ec%9d%98-%eb%9d%bc%ec%9d%b4%ec%84%bc%ec%8a%a4%ec%97%90-%eb%8c%80%ed%95%98%ec%97%ac">#</a>
+</h2>
+<p>GNU Gettext의 라이센스는 GPL이다, 허나 GPL은 Gettext PO파일을 다루는 프로그램에 적용되고, 프로그래밍에 사용되는 libintl 은 LGPL로 관리되고 있다. 인터페이스인 libintl.h 는 glibc에 적용되어 있기때문에, 이들 코드를 상용 소프트웨어를 만드는데 사용해도 상관이 없다고 할 수 있다.</p>
+<h2 id="i18n-l10n-에-대하여">
+  I18n, l10n 에 대하여
+  <a class="anchor" href="#i18n-l10n-%ec%97%90-%eb%8c%80%ed%95%98%ec%97%ac">#</a>
+</h2>
+<p>이 부분에 대해 더욱 자세한 사항을 알고 싶으면 다음의 페이지를 참고하길 바란다:</p>
+<p><a href="http://www.gnu.org/software/gettext/manual/html_mono/gettext.html">http://www.gnu.org/software/gettext/manual/html_mono/gettext.html</a>
+소프트웨어에 대한 국제화를 이야기 할때 항상 빠지지 않는 두 단어가 있다. 바로 Internationalization과 Localization 인데, 많은 이들이 이들 긴 단어를 치는데 지친 나머지 I18n과 l10n이라고 쓰게 되었다. 이들 두 단어에 대한 정확한 정의는 다음과 같다:
+Internationalization : 번역하기를 &ldquo;국제화&rdquo; 라고 한다. 이 단어는 패키지화 된 프로그램이 있을때 그 프로그램이 다양한 언어를 지원하도록 만들어진 것을 의미한다. 이는 다시말해 영어로 된 문자열을 사용하여 이루어지는 행동과, 영어 이외의 다른 언어로 이루어지는 행동이 &ldquo;차이 없는&rdquo; 일반화 과정(Generalization process)이라고 할 수 있다. 프로그램 개발자는 자신의 프로그램에 국제화를 적용할때 다양한 기술을 사용할 수 있는데, GNU gettext는 이들 표준중에 하나를 제공하는 것이라고 할 수 있다.</p>
+<p>Localization : 번역하기를 &ldquo;지역화&rdquo; 라고 한다. 지역화는 국제화(I18n)가 모집합인 집합 구성원으로 (쉽게 말해 이미 국제화가 된 소프트웨어만 국제화를 진행 할 수 있다는 뜻이다), 관련된 정보를 특정 지역의 언어/문화에 관련된 행동양식에 맞추어 (예를 들자면 화폐단위, 지역시간 등) 사용할 수 있게 하는 것이라고 할 수 있다. 이는 특정방법으로 이미 국제화로 일반화된(Generalized) 프로그램을 부분화시키는 작업이라고도 할 수 있다. 이들 지역화의 구분은 특별한 환경 변수를 바탕으로  프로그램 실행전에 &ldquo;어느 로케일에서 사용되고 있는지&quot;를 파악, 실행시간대에 그것을 적용하게 하는 것이다.</p>
+<h2 id="프로그래머의-접근-방법">
+  프로그래머의 접근 방법
+  <a class="anchor" href="#%ed%94%84%eb%a1%9c%ea%b7%b8%eb%9e%98%eb%a8%b8%ec%9d%98-%ec%a0%91%ea%b7%bc-%eb%b0%a9%eb%b2%95">#</a>
+</h2>
+<h3 id="준비단계">
+  준비단계
+  <a class="anchor" href="#%ec%a4%80%eb%b9%84%eb%8b%a8%ea%b3%84">#</a>
+</h3>
+<p>가장 처음 프로그래머가 자신의 프로그램에 gettext를 적용하기 위해서 할 일은, C 코드에 gettext를 적용할 수 있도록 준비하는 것이다. 이 과정에는, gettext를 설치하고, 자신의 코드에 libintl.h 를 include 하는 일과, 갖가지 매크로를 정의하는 일도 포함되어 있다. 그리고 가장 중요한 것은, 번역할 문자열과 아닌 문자열을 구분 할 수 있게 매크로에 맞게 수정하는 일이 될 것이다.</p>
+<h3 id="코드-적용">
+  코드 적용
+  <a class="anchor" href="#%ec%bd%94%eb%93%9c-%ec%a0%81%ec%9a%a9">#</a>
+</h3>
+<p>자신의 코드를 그것에 맞게 수정을 하게 되면, 그때 부터 gettext의 각종 툴과 설정으로 적용을 시켜나가야 할 것이다. 이 과정은 예제 C 코드를 들어 설명하고자 한다:</p>
+<pre tabindex="0"><code> /* 샘플 코드: gettext_sample.c */
+ #include &lt;libintl.h&gt;
+ #include &lt;locale.h&gt;
+ #include &lt;stdio.h&gt; 
+ /* 매크로를 잡아준다. gettext를 매번 쳐서 넣어주기는 귀찮으니까. 이렇게 될 경우에는,
+    xgettext를 사용시 옵션을 줘서 어떤 매크로가 사용되었는지 키워드를 알려줘야 한다 */ 
+ #define _(String) gettext (String) 
+ /* 원래 PACKAGE와 LOCALEDIR은 autoconf/automake 사용시에 config.h 로 생성되어야
+  * 할 부분이다. 현재 값으로 들어가게 되면 각 로케일에 맞는 번역 MO파일을 
+  * 현재디렉토리/locales/자신의로케일/PACKAGE 상수에 들어간 값.mo 로 찾게 된다.
+  * 자세한 것은 뒤의 장에서 추가로 설명할 것이다 */ 
+ #define PACKAGE &#34;gettext_sample&#34; 
+ #define LOCALEDIR &#34;locales&#34; 
+ int main (void)
+ {
+     // 밑의 3줄은 gettext를 사용함에 있어 가장 기초적인 베이스 코드이다.
+     setlocale (LC_ALL, &#34;&#34;);
+     bindtextdomain (PACKAGE, LOCALEDIR);
+     textdomain (PACKAGE); 
+     printf (_(&#34;This is gettext sample program.\n&#34;)); 
+     printf (&#34;original message: %s\n&#34;, &#34;World&#34;);
+     printf (&#34;gettext trans: %s\n&#34;, _(&#34;World&#34;)); 
+     return 0;
+ }
+</code></pre><h3 id="po-파일-추출">
+  PO 파일 추출
+  <a class="anchor" href="#po-%ed%8c%8c%ec%9d%bc-%ec%b6%94%ec%b6%9c">#</a>
+</h3>
+<p>이제 xgettext 를 사용하여 번역할 부분만 추출된 PO 파일을 생성해야 한다. 기본적으로 위의 코드를 저장하고 다음과 같이 실행해보도록 한다:</p>
+<p>$ xgettext -C gettext_sample.c -o gettext_sample.po
+-C 옵션은 이 파일이 C 언어로 된 파일이라는 것을 명시해주는 것이다.
+-o filename 옵션은 출력파일의 이름을 정하는 것이다. 기본적으로 messages.po 로 만들어진다.
+자, ls로 파일이 만들어진지 확인해보도록 하자. 없다! 이 사항은 gettext() 로 번역해야 할 사항들을 검색하기 때문에, 아무것도 찾지 못하기 때문에 출력물이 나오지를 않는것이다. 이 부분은 키워드를 지정해서 해결하도록 한다. 다시 다음과 같이 실행해보자:</p>
+<p>$ xgettext -k_  -C gettext_sample.c -o gettext_sample.po
+키워드의 지정은 -k_ 거나 &ndash;keyword=_ 둘중 아무거나 선택해도 된다. 자세한것은 man페이지를 참조.</p>
+<h3 id="po-파일의-수정">
+  PO 파일의 수정
+  <a class="anchor" href="#po-%ed%8c%8c%ec%9d%bc%ec%9d%98-%ec%88%98%ec%a0%95">#</a>
+</h3>
+<p>자, 이제 gettext_sample.po 파일을 얻었다. 이제 남은 것은 emacs나 vi로 po 파일을 직접 수정하거나 (그중에서 emacs의 po-mode 를 사용하면 편리할 것이다), poedit 를 받아서 설치(wxWindows 가 필요하다. 리눅스에서는 wxGTK.) 하여 사용하는 방법이 있다. 이래저래 파일을 들여다보는 것도 좋지만, 목적달성을 위해서 최대한 잡일을 줄인다는 목표로 poedit를 사용하기를 권장한다.</p>
+<p>PO 파일을 수정할 때 주의할 사항은, 인코딩과 국가 설정, 그리고 초기 설정을 전부 갱신해야 한다는데 있다. poedit를 사용하면 이들 부분을 전부 체크해줄 뿐만 아니라 mo 파일까지 생성해준다. (물론 옵션이다) 편한 세상에서 살고 있는 것이다.</p>
+<p>그래서 만들어진 PO 파일을 보도록 하자.</p>
+<pre tabindex="0"><code> # gettext_sample.c 의 PO 파일: gettext_sample.po
+ # Copyright (C) 2006 by luna_j&#39;etch
+ # This file is distributed under the same license as the gettext_sample
+ # package.
+ # luna_j&#39;etch &lt;luna.jetch@test.org&gt;, 2006.
+ #
+ msgid &#34;&#34;
+ msgstr &#34;&#34;
+ &#34;Project-Id-Version: gettext_sample\n&#34;
+ &#34;Report-Msgid-Bugs-To: \n&#34;
+ &#34;POT-Creation-Date: 2006-06-26 22:04+0900\n&#34;
+ &#34;PO-Revision-Date: 2006-06-26 22:21+0900\n&#34;
+ &#34;Last-Translator: LunA J`etch &lt;luna.jetch@test.org&gt;\n&#34;
+ &#34;Language-Team: KO LANG Team &lt;ko@test.org&gt;\n&#34;
+ &#34;MIME-Version: 1.0\n&#34;
+ &#34;Content-Type: text/plain; charset=utf-8\n&#34;
+ &#34;Content-Transfer-Encoding: 8bit\n&#34;
+ &#34;X-Poedit-Language: Korean\n&#34;
+ &#34;X-Poedit-Country: KOREA, REPUBLIC OF\n&#34;
+ &#34;X-Poedit-SourceCharset: utf-8\n&#34; 
+ #: gettext_sample.c:16
+ #, c-format
+ msgid &#34;This is gettext sample program.\n&#34;
+ msgstr &#34;이것은 gettext 샘플 프로그램입니다.\n&#34; 
+ #: gettext_sample.c:19
+ msgid &#34;World&#34;
+ msgstr &#34;세계&#34;
+</code></pre><h3 id="po에서-mo로-변환">
+  PO에서 MO로 변환
+  <a class="anchor" href="#po%ec%97%90%ec%84%9c-mo%eb%a1%9c-%eb%b3%80%ed%99%98">#</a>
+</h3>
+<p>po 파일을 mo 파일로 생성하는 과정은 다음과 같다: (사실 이과정은 poedit를 사용하면 필요가 없다)</p>
+<p>$ msgfmt gettext_sample.po -o gettext_sample.mo -v
+번역된 메시지 2개.</p>
+<p>verbose 모드로 결과를 보면, 메시지 2개가 번역되었다고 한다. 앞으로 사용하다보면 fuzzy 번역문이 나올 수도 있는데, fuzzy는 번역으로 인정하지 않으므로 다른 프로젝트에 봉사할 때에는 fuzzy 번역문이 없도록 해 주자.</p>
+<h3 id="실행을-위한-적용">
+  실행을 위한 적용
+  <a class="anchor" href="#%ec%8b%a4%ed%96%89%ec%9d%84-%ec%9c%84%ed%95%9c-%ec%a0%81%ec%9a%a9">#</a>
+</h3>
+<p>이렇게 만들어진 mo 파일을 실행파일에 적용하기 위해서는 그 경로의 설정 또한 중요하다. 앞의 샘플 소스에서 언급했지만, 이 부분은 gettext가 적용되기 위해서 찾아가는 모든 경로에 대한 염두를 해 둬야 한다. strace(1) 을 사용하여 gettext 구동에 필요한 입출력이 어떻게 이루어지는지 확인하여 눈으로 익혀두는 방법을 권장한다.</p>
+<p>위 샘플 코드를 기준으로, gettext가 적용되면 다음과 같은 입출력을 하게 된다:</p>
+<p>&ldquo;/usr/lib/locale/locale-archive&rdquo; 를 검색한다
+&ldquo;/usr/share/locale/locale.alias&rdquo; 즉, 로케일 명 alias 데이터베이스를 검색한다. 여기서 자신의 로케일명과 맞아 떨어지는 부분이 있으면 그 디렉토리를 검색하게 될 것이다.
+&ldquo;/usr/lib/locale/현재 LOCALE 환경 변수 명(+소문자:lower alphanumeric)/LC_*/PACKAGE상수값&rdquo; 를 검색한다
+그러다 없으면 &ldquo;현재 작업 디렉토리/LOCALEDIR에 지정한 값(locales)/현재 로케일/LC_MESSAGES/PACKAGE상수값&rdquo; 으로 찾는다
+없으면 무시하고 그냥 소스에 적혀있는대로 출력하게 되고, 파일을 찾으면 번역을 해서 출력하게 된다.</p>
+<h2 id="libglade와-gettext-그리고-intltool">
+  libglade와 gettext, 그리고 intltool
+  <a class="anchor" href="#libglade%ec%99%80-gettext-%ea%b7%b8%eb%a6%ac%ea%b3%a0-intltool">#</a>
+</h2>
+<p>커맨드 라인에서 동작하는 프로그램의 경우야 그렇다 치더라도, 이제 GUI 기반의 프로그램 (특히, 여기서 언급하고자 하는 것은 Gtk+-2.x 를 기준으로 한다) 에 대한 적용단계가 있다. 그 중에서, glade, a User Interface builder (이하 glade) 를 사용해 만든 프로그램에서 어떻게 적용하는지에 대해 언급하고자 한다.</p>
+<p>glade로 UI를 구성 한 후 Code generation을 했을 경우라면 옵션에서 -&gt; C 옵션 중 gettext 지원에 체크만 해 놓더라도 UI에 대한 메시지는 gettext를 지원할 수 있게 되어 있다.</p>
+<p>glade xml로 저장하고, libglade를 사용하여 동적으로 UI를 생성하는 것이라면 이야기가 <em>약간</em> 달라진다. 이때는 xml 파일에서 gettext를 쓸 수 있도록 무언가를 생성해야 하는데, 이때 사용하는 것이 바로 intltool 이다.</p>
+<h3 id="glade-xml-로부터-메시지-추출">
+  glade-xml 로부터 메시지 추출
+  <a class="anchor" href="#glade-xml-%eb%a1%9c%eb%b6%80%ed%84%b0-%eb%a9%94%ec%8b%9c%ec%a7%80-%ec%b6%94%ec%b6%9c">#</a>
+</h3>
+<p>그 중 만들어진 glade-xml 파일에서 gettext 지원을 할 수 있도록 도와주는 툴은 intltool-extract 이다. 말 그대로 xml 파일로 부터 C header 파일을 &ldquo;추출&quot;하기 위한 유틸이다. 사용법은 man 페이지를 참조하고, 다음의 커맨드를 살펴보자: (예제는 언젠가 만들어놓은 PDFLib-Dompdf HTML to PDF Renderer 의 것이다)</p>
+<pre tabindex="0"><code> $ intltool-extract --type=gettext/glade psp_main.glade
+ Generating C format header file for translation.
+ Wrote psp_main.glade.h
+</code></pre><p>추출을 하기 전, 해당 xml 파일을 전부 영문으로 바꿔놓아야 한다.</p>
+<p>타입에는 glade-xml 파일 이외에 gettext/ini, gettext/scheme 등이 가능하므로 man 페이지를 자세히 들여다 보길 바란다.
+실행이 완료되면 psp_main.glade.h 파일이 생성되는데, 그 파일의 속내를 들여다보자:</p>
+<pre tabindex="0"><code> char *s = N_(&#34;DomPDF HTML Shoveling Previewer 0.3Beta1 Release&#34;);
+ char *s = N_(&#34;Landscape&#34;);
+ char *s = N_(&#34;Next Page&#34;);
+ char *s = N_(&#34;Open File...&#34;);
+ char *s = N_(&#34;Previous Page&#34;);
+ char *s = N_(&#34;Print&#34;);
+ char *s = N_(&#34;Print(_T)&#34;);
+ char *s = N_(&#34;Refresh&#34;);
+ char *s = N_(&#34;Refresh(_F)&#34;);
+ char *s = N_(&#34;Scale&#34;);
+ char *s = N_(&#34;_About&#34;);
+ char *s = N_(&#34;_File&#34;);
+ char *s = N_(&#34;_Help&#34;);
+ char *s = N_(&#34;_View&#34;);
+</code></pre><p>위와 같이 glade-xml 에 들어있던 레이블이 모두 모여서 N_() 으로 감싸져있다. 이는 배열 내의 값을 gettext로 변환하는 gettext_noop() 의 매크로 축약인데, UI에서 사용되는 다른 부분이 전부 배열로 선언되어 사용되기 때문이다. 사실 이 부분은 xgettext 에서 사용될 &ldquo;가짜 C 파일&rdquo; 이므로, xgettext를 사용하여 문자열을 뽑아낼때 추가시켜 주면 된다. 실제 컴파일에 영향을 미치지는 않으므로, 키워드에 N_ 을 추가시켜서 xgettext를 실행시켜야 할 뿐, 다른 것은 없다. 밑에 PO 파일 생성 부에서 다시 이 파일을 언급하고자 한다.</p>
+<h3 id="메인-프로그램의-수정">
+  메인 프로그램의 수정
+  <a class="anchor" href="#%eb%a9%94%ec%9d%b8-%ed%94%84%eb%a1%9c%ea%b7%b8%eb%9e%a8%ec%9d%98-%ec%88%98%ec%a0%95">#</a>
+</h3>
+<p>만약 define된 스트링 상수가 있다면 (예를 들자면 about 에 들어갈 내용이라던지) 그 부분에 _() 매크로를 덧씌워 주도록 한다.</p>
+<p>#define PSPV_PROGRAM_NAME    _(&ldquo;DomPDF HTML Rendering Previewer&rdquo;)
+#define PSPV_VERSION         _(&ldquo;0.3beta1&rdquo;)
+#define PSPV_LICENSE         _(&ldquo;Licensed Under GNU Public License V2 or more.&rdquo;)
+#define PSPV_COMMENTS        _(&ldquo;Simple DomPDF HTML Renderer helper tool&rdquo;)
+#define PSPV_COPYRIGHT       _(&ldquo;2006 (C) LunA_J`etch&rdquo;)</p>
+<p>이 부분이 완료 되면, 이제 앞에서 보았던 샘플 코드 처럼 베이스 코드를 추가하도록 하자. 구현에 대한 상세는 Gettext 사용법을 익히기위해 필요하지 않으므로, 생략한다.</p>
+<pre tabindex="0"><code> // ...(전략)...
+ #include &lt;libintl.h&gt;
+ #include &lt;locale.h&gt;
+ /* gettext 매크로 정의 */
+ #define _(String) gettext (String)
+ #define N_(String) gettext_noop (String) 
+ #define PACKAGE &#34;pspv&#34;
+ #define LOCALEDIR &#34;locales&#34; 
+ // ...(중략)...
+ int
+ main (int argc, char *argv[])
+ {
+     /* gettext 적용을 위한 코드 */
+     setlocale (LC_ALL, &#34;&#34;);
+     bindtextdomain (PACKAGE, LOCALEDIR);
+     textdomain (PACKAGE); 
+     g_thread_init (NULL);
+     gdk_threads_init (); 
+     gtk_set_locale ();
+     gtk_init (&amp;argc, &amp;argv); 
+     gp_xml_main = glade_xml_new(GLADE_LAYOUT_PATH, NULL, NULL);
+     glade_xml_signal_autoconnect(gp_xml_main); 
+     /* layout initialization */
+     init_layout ();
+     init_accelerator ();
+ // ... (후략) ... 
+</code></pre><h3 id="po-파일-생성-그리고-결과">
+  PO 파일 생성, 그리고 결과
+  <a class="anchor" href="#po-%ed%8c%8c%ec%9d%bc-%ec%83%9d%ec%84%b1-%ea%b7%b8%eb%a6%ac%ea%b3%a0-%ea%b2%b0%ea%b3%bc">#</a>
+</h3>
+<p>베이스 코드가 추가되었다면, 이제 po 파일을 뽑아내보도록 하자.</p>
+<p>앞에서 glade xml로 부터 만들어진 가짜 C 코드(psp_main.glade.h)를 활용하여, po 파일을 뽑아야 한다. 다음의 커맨드를 사용하자:</p>
+<p>$ xgettext -kN_ -k_ -C pspv.c pspv.h psp_main.glade.h -o pspv.po
+위 3개의 헤더 파일 및 C 파일에서 원하는 스트링을 찾아내서 po 파일을 만들어 줄 것이다. 이제 poedit를 사용해서(혹은 emacs의 po-mode를 쓰던지) mo 파일을 생성하도록 하자.
+생성된 mo 파일을, 적절한 위치에 가져다 주자. 위치에 대한 설명은 3장을 다시 살펴보자.</p>
+<p>모든 것이 끝나면, 이제 프로그램을 재 컴파일 하고 실행한다. 그럼 짜잔~ 하고 한글로 번역된 프로그램이 보일 것이다.</p>
+<p>아래는 적용된 결과물 예제:</p>
+<h2 id="기타-주요-사항">
+  기타 주요 사항
+  <a class="anchor" href="#%ea%b8%b0%ed%83%80-%ec%a3%bc%ec%9a%94-%ec%82%ac%ed%95%ad">#</a>
+</h2>
+<h3 id="printf-와-출력순서에-대하여">
+  printf() 와 출력순서에 대하여
+  <a class="anchor" href="#printf-%ec%99%80-%ec%b6%9c%eb%a0%a5%ec%88%9c%ec%84%9c%ec%97%90-%eb%8c%80%ed%95%98%ec%97%ac">#</a>
+</h3>
+<p>메시지 번역을 하다보면, 영문과 한글의 어순이 달라서 출력의 순서까지 변경해야 하는 경우가 생긴다. (그렇지 않으면 &ldquo;luna 그룹에 audio 유저 추가(주: gpasswd의 번역오류이다)&rdquo; 와 같은 문제가 발생한다. 이 문제는 printf()에서 지원하는 서식 문자열 기능을 써서 출력 순서를 정해주는 것으로 해결 할 수 있다.</p>
+<p>예를 들어 보자: &ldquo;%d of %d&rdquo; -&gt;  &ndash;&quot;%d 중 %d 개&rdquo;&mdash; 가 아닌 &ldquo;%2$d 중 %1$d 개&rdquo; 로 표기하여 해결 할 수 있는 것이다.</p>
+<h3 id="배열에-gettext-를-적용하려면-gettext_noop-을-사용한다">
+  배열에 gettext 를 적용하려면 gettext_noop() 을 사용한다
+  <a class="anchor" href="#%eb%b0%b0%ec%97%b4%ec%97%90-gettext-%eb%a5%bc-%ec%a0%81%ec%9a%a9%ed%95%98%eb%a0%a4%eb%a9%b4-gettext_noop-%ec%9d%84-%ec%82%ac%ec%9a%a9%ed%95%9c%eb%8b%a4">#</a>
+</h3>
+<p>배열에 gettext 번역을 적용하고 싶을 때는, gettext_noop()을 사용한다. 어차피 gettext_noop은 xgettext 프로그램을 위한 코드이므로, C 컴파일러에서 안전하게 처리 될 수 있도록 미리 매크로 축약을 구성하도록 한다.</p>
+<pre tabindex="0"><code> /* gettext_noop()을 배열에 적용할때 컴파일러에서 안전하게 처리되도록 하기 위한 매크로와,
+  * 그것의 매크로 축약을 정의해둔다 */
+ #define N_(String) gettext_noop(String)
+ #define gettext_noop(String) (String) 
+ static const char *err_messages[] = {
+    N_(&#34;Errno 1: File not found&#34;),
+    N_(&#34;Errno 2: Cannot execute execl(), bugs?&#34;)
+ };
+</code></pre><p>그리고 xgettext를 사용할때는 -kN_ 으로 키워드를 추가해놓는 것이 좋다. :)</p>
+<p>출처: <a href="https://web.archive.org/web/20070528043820/http://www.gnome.or.kr/c/portal/layout?p_l_id=PUB.1.88">https://web.archive.org/web/20070528043820/http://www.gnome.or.kr/c/portal/layout?p_l_id=PUB.1.88</a></p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+    <div style="text-align: center" >
+    <p><span class = 'year'>2020</span>&nbsp;GNOME KOREA.
+      
+    </p>
+  </div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#gnu-gettext의-라이센스에-대하여">GNU gettext의 라이센스에 대하여</a></li>
+    <li><a href="#i18n-l10n-에-대하여">I18n, l10n 에 대하여</a></li>
+    <li><a href="#프로그래머의-접근-방법">프로그래머의 접근 방법</a>
+      <ul>
+        <li><a href="#준비단계">준비단계</a></li>
+        <li><a href="#코드-적용">코드 적용</a></li>
+        <li><a href="#po-파일-추출">PO 파일 추출</a></li>
+        <li><a href="#po-파일의-수정">PO 파일의 수정</a></li>
+        <li><a href="#po에서-mo로-변환">PO에서 MO로 변환</a></li>
+        <li><a href="#실행을-위한-적용">실행을 위한 적용</a></li>
+      </ul>
+    </li>
+    <li><a href="#libglade와-gettext-그리고-intltool">libglade와 gettext, 그리고 intltool</a>
+      <ul>
+        <li><a href="#glade-xml-로부터-메시지-추출">glade-xml 로부터 메시지 추출</a></li>
+        <li><a href="#메인-프로그램의-수정">메인 프로그램의 수정</a></li>
+        <li><a href="#po-파일-생성-그리고-결과">PO 파일 생성, 그리고 결과</a></li>
+      </ul>
+    </li>
+    <li><a href="#기타-주요-사항">기타 주요 사항</a>
+      <ul>
+        <li><a href="#printf-와-출력순서에-대하여">printf() 와 출력순서에 대하여</a></li>
+        <li><a href="#배열에-gettext-를-적용하려면-gettext_noop-을-사용한다">배열에 gettext 를 적용하려면 gettext_noop() 을 사용한다</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
