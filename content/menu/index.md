@@ -1,9 +1,9 @@
 ---
 headless: true
 ---
-- **GNOME 역사**
-- [GIMP와 GTK+]({{< relref "/docs/gnome_history/gimp_gtk" >}})
+- **GNOME**
 - [그놈 한국]({{< relref "/docs/gnome_history/korea" >}})
+- [GIMP와 GTK+의 역사]({{< relref "/docs/gnome_history/gimp_gtk" >}})
 - [그놈 한국 홈페이지 변천사]({{< relref "/docs/gnome_history/gnome_kr_home" >}})
 
 - **Projects**

@@ -1,7 +1,7 @@
 ---
 menu:
   before:
-    name: News 
+    name: News
     weight: 5
-title: News
+title: 새소식
 ---

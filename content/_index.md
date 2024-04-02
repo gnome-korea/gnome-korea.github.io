@@ -51,3 +51,4 @@ type: docs
 * [GUADEC 2019](https://events.gnome.org/event/11/)
 
 {{< /columns >}}
+
