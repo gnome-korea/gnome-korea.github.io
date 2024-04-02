@@ -58,14 +58,6 @@
   </url><url>
     <loc>http://gnome.or.kr/docs/develop/</loc>
   </url><url>
-    <loc>http://gnome.or.kr/docs/develop/begin/</loc>
-  </url><url>
-    <loc>http://gnome.or.kr/docs/develop/i18n/</loc>
-  </url><url>
-    <loc>http://gnome.or.kr/docs/gnome_history/gimp_gtk/</loc>
-  </url><url>
-    <loc>http://gnome.or.kr/docs/gnome_history/gnome_kr_home/</loc>
-  </url><url>
     <loc>http://gnome.or.kr/docs/projects/</loc>
   </url><url>
     <loc>http://gnome.or.kr/docs/projects/gnome-kr-l10n/</loc>
@@ -74,8 +66,16 @@
   </url><url>
     <loc>http://gnome.or.kr/docs/</loc>
   </url><url>
+    <loc>http://gnome.or.kr/docs/gnome_history/gimp_gtk/</loc>
+  </url><url>
+    <loc>http://gnome.or.kr/docs/gnome_history/gnome_kr_home/</loc>
+  </url><url>
     <loc>http://gnome.or.kr/docs/gnome_history/korea/</loc>
   </url><url>
+    <loc>http://gnome.or.kr/docs/develop/i18n/</loc>
+  </url><url>
     <loc>http://gnome.or.kr/docs/develop/architecture/</loc>
+  </url><url>
+    <loc>http://gnome.or.kr/docs/develop/begin/</loc>
   </url>
 </urlset>
