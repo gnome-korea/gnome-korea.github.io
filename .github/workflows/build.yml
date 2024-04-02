@@ -25,7 +25,7 @@ jobs:
       - name: Build website with hugo
         working-directory: src
         run: |
-          yes | apt install hugo
+          yes | sudo apt -y install hugo
           hugo
       # Checkout destination repository
       - name: Checkout dest repo
