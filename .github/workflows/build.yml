@@ -25,8 +25,7 @@ jobs:
       - name: Build website with hugo
         working-directory: src
         run: |
-          yes | /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-          yes | brew install hugo
+          yes | apt install hugo
           hugo
       # Checkout destination repository
       - name: Checkout dest repo
