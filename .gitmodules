@@ -1,0 +1,13 @@
+[submodule "themes/chunky-poster"]
+	path = themes/chunky-poster
+	url = https://github.com/puresyntax71/hugo-theme-chunky-poster.git
+[submodule "public"]
+	path = public
+	url = git@github.com:gnome-korea/gnome-or-kr.github.io.git
+	branch = master
+[submodule "themes/ananke"]
+	path = themes/ananke
+	url = https://github.com/budparr/gohugo-theme-ananke.git
+[submodule "themes/book"]
+	path = themes/book
+	url = https://github.com/alex-shpak/hugo-book

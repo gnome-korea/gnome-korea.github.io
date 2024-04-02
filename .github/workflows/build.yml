@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  push:
+    tags:
+      - "v*" # Or trigger on tags starting with 'v' (e.g., v1.0.0)
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+        name: Checkout src repo
+        with:
+          path: src
+          fetch-depth: 0
+          ref: main
+          submodules: recursive
+
+      # Build hugo website with klakegg/actions-hugo@1.0.0 action
+      - name: Build website with hugo
+        working-directory: src
+        run: |
+          yes | sudo apt -y install hugo
+          hugo
+
+      # Checkout destination repository
+      - name: Checkout dest repo
+        uses: actions/checkout@v2
+        with:
+          path: dest
+          fetch-depth: 0
+          ref: gh-pages
+
+      # Copy the built website files
+      - name: Copy website built from public folder
+        working-directory: dest
+        run: |
+          rm -rf *
+          yes | cp -rf ../public/* .  # Replace '(output_folder)' with your build output dir
+
+      # Commit and push changes
+      - name: Commit website updates
+        working-directory: dest
+        run: |
+          git config --global user.name github-actions
+          git config --global user.email github-actions@github.com
+          git add .
+          git diff-index --quiet HEAD || git commit -m "Deploy website updates with GitHub Actions: ${GITHUB_SHA}"
+          git push origin gh-pages
