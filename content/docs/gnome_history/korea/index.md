@@ -1,5 +1,5 @@
 ---
-title: HOME
+title: 그놈 한국(GNOME KOREA) 소개
 type: docs
 ---
 
