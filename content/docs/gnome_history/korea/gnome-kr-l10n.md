@@ -1,6 +1,6 @@
 ---
 title: 그놈 한글화 프로젝트
-type: docs
+draft: false
 ---
 
 # 그놈 한글화 프로젝트
