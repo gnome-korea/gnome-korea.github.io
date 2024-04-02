@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
         name: Checkout src repo
         with:
@@ -18,18 +19,12 @@ jobs:
           ref: main
           submodules: recursive
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: "18.x" # Or your desired version
-
-      - name: Install dependencies
-        run: npm install
+      # Build hugo website with klakegg/actions-hugo@1.0.0 action
+      - name: Build website with hugo
         working-directory: src
-
-      - name: Build
-        run: npm run build
-        working-directory: src
+        run: |
+          yes | sudo apt -y install hugo
+          hugo
 
       # Checkout destination repository
       - name: Checkout dest repo
