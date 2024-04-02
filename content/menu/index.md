@@ -14,7 +14,6 @@ headless: true
 - [그놈 개발 센터](https://developer.gnome.org/)
 - [개발 시작하기]({{< relref "/docs/develop/begin" >}})
 - [그놈 플랫폼 아키텍쳐 개관]({{< relref "/docs/develop/architecture" >}})
-- [그놈 개발툴 소개]({{< relref "/docs/develop/tools" >}})
 - [국제화(I18n) 가이드]({{< relref "/docs/develop/i18n" >}})
 
 
