@@ -6,7 +6,19 @@
     <description>Recent content in HOME on GNOME KOREA</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 Jan 2021 22:17:43 -0700</lastBuildDate><atom:link href="http://gnome.or.kr/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Apr 2024 01:23:20 -0700</lastBuildDate><atom:link href="http://gnome.or.kr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GNOME 46, &#39;카트만두&#39;의 출시</title>
+      <link>http://gnome.or.kr/posts/intro_gnome_46/</link>
+      <pubDate>Tue, 02 Apr 2024 01:23:20 -0700</pubDate>
+      
+      <guid>http://gnome.or.kr/posts/intro_gnome_46/</guid>
+      <description>https://www.youtube.com/watch?v=r_QyRJf3rtQ
+GNOME 프로젝트는 GNOME 46, &amp;lsquo;카트만두&amp;rsquo;의 출시를 발표했습니다. 이번 릴리스는 RDP를 통한 원격 로그인, 가변 리프레시 레이트(VRR), 다양한 접근성 개선, 강화된 알림, 개선된 설정 등을 제공합니다. 파일 앱은 새로운 전역 검색 기능과 많은 개선 사항을 포함하고 있으며, 많은 새 앱이 GNOME Circle에 합류했습니다. GNOME 46에 대한 자세한 변경 사항은 릴리스 노트에서 확인할 수 있습니다.
+https://release.gnome.org/46/
+GNOME 46은 곧 Fedora 40과 Ubuntu 24.04와 같은 많은 배포판에서 사용할 수 있을 예정입니다. 오늘 시도해보고 싶다면, 곧 제공될 베타 릴리스를 찾아볼 수 있습니다.</description>
+    </item>
+    
     <item>
       <title>그놈 프로젝트의 역사</title>
       <link>http://gnome.or.kr/posts/history_of_ghome/</link>

@@ -1,5 +1,11 @@
-"use strict";(function(){const t={cache:!0};t.doc={id:"id",field:["title","content"],store:["title","href","section"]};const e=FlexSearch.create("balance",t);window.bookSearchIndex=e,e.add({id:0,href:"/posts/history_of_ghome/",title:"그놈 프로젝트의 역사",section:"새소식",content:`GUADEC 2017에서 발표된 그놈 프로젝트의 역사입니다. 상당히 잘 정리가 되어 있네요. 멕시코 출신 미구엘이 1997년 8월에 시작한 이 프로젝트가 이렇게 커져서 KDE와 더불어 양대 오픈소스 데스크탑이 되었습니다. 이분은 나중에 Mono도 만들었고, 리눅스 커널 해커이기도 하지요. 관련 링크와 발표자료를 소개합니다.
-lwn 기사 그놈 블로그 기사 발표 자료 `}),e.add({id:2,href:"/posts/gnome-asia-2020-promote/",title:"그놈 아시아 서밋 2020 (온라인) 개최 ",section:"새소식",content:`번역: 성대현(DaeHyun Sung)
+"use strict";(function(){const t={cache:!0};t.doc={id:"id",field:["title","content"],store:["title","href","section"]};const e=FlexSearch.create("balance",t);window.bookSearchIndex=e,e.add({id:0,href:"/posts/intro_gnome_46/",title:"GNOME 46, '카트만두'의 출시",section:"새소식",content:`https://www.youtube.com/watch?v=r_QyRJf3rtQ
+GNOME 프로젝트는 GNOME 46, \u0026lsquo;카트만두\u0026rsquo;의 출시를 발표했습니다. 이번 릴리스는 RDP를 통한 원격 로그인, 가변 리프레시 레이트(VRR), 다양한 접근성 개선, 강화된 알림, 개선된 설정 등을 제공합니다. 파일 앱은 새로운 전역 검색 기능과 많은 개선 사항을 포함하고 있으며, 많은 새 앱이 GNOME Circle에 합류했습니다. GNOME 46에 대한 자세한 변경 사항은 릴리스 노트에서 확인할 수 있습니다.
+https://release.gnome.org/46/
+GNOME 46은 곧 Fedora 40과 Ubuntu 24.04와 같은 많은 배포판에서 사용할 수 있을 예정입니다. 오늘 시도해보고 싶다면, 곧 제공될 베타 릴리스를 찾아볼 수 있습니다. 디버깅과 테스트 기능을 위한 자체 인스톨러 이미지도 제공하며, 이 이미지들은 가상 머신에서 설치를 위해 UEFI 지원이 포함된 GNOME Boxes가 필요합니다.
+GNOME 46용 애플리케이션을 개발하는 데 관심이 있다면, http://www.flathub.org/ 저장소에서 사용할 수 있는 GNOME 46 Flatpak SDK를 찾아보세요.
+참고로, 2024년 GUADEC에서 콜로라도의 덴버에서 열릴 예정이며, 다음 릴리스인 GNOME 47은 2024년 9월에 계획되어 있습니다.
+`}),e.add({id:2,href:"/posts/history_of_ghome/",title:"그놈 프로젝트의 역사",section:"새소식",content:`GUADEC 2017에서 발표된 그놈 프로젝트의 역사입니다. 상당히 잘 정리가 되어 있네요. 멕시코 출신 미구엘이 1997년 8월에 시작한 이 프로젝트가 이렇게 커져서 KDE와 더불어 양대 오픈소스 데스크탑이 되었습니다. 이분은 나중에 Mono도 만들었고, 리눅스 커널 해커이기도 하지요. 관련 링크와 발표자료를 소개합니다.
+lwn 기사 그놈 블로그 기사 발표 자료 `}),e.add({id:3,href:"/posts/gnome-asia-2020-promote/",title:"그놈 아시아 서밋 2020 (온라인) 개최 ",section:"새소식",content:`번역: 성대현(DaeHyun Sung)
 참고 # GNOME ASIA 2020 Call for papers is now Open!
 GNOME.Asia Summit 2020 홈페이지
 그놈 아시아 2020 발표 제안이 열렸습니다 # 그놈 아시아 서밋 2020(GNOME.Asia Summit 2020)에서 이 글을 보시는 분들에게 발표자로 참여하도록 초대합니다. 컨퍼런스는 2020년 11월 24일부터 26일, 3일간 열립니다.
@@ -15,10 +21,10 @@ GNOME.Asia Summit 2020 홈페이지
 발표 제안 제출기한: 2020년 10월 25일
 추가. 2020년 10월 9일에 GNOME.Asia 운영진 측에게 10월 25일까지 연장되었다고 합니다. 정확한 내용은 다음의 링크를 참조하기 바랍니다 https://www.facebook.com/groups/gnome.asia/permalink/10158709107164183
 만약에, 온라인으로 본인의 자유오픈소스 역량을 발표하실 분은 도전해주시기 바랍니다!
-`}),e.add({id:3,href:"/posts/new-gnome-kr-site/",title:"그놈 한국 사이트 개편 안내",section:"새소식",content:`지금까지 구글 사이트를 통해 그놈 한국 웹사이트를 제공했는데, 이번에 새롭게 자체 홈페이지를 구축했습니다.
+`}),e.add({id:4,href:"/posts/new-gnome-kr-site/",title:"그놈 한국 사이트 개편 안내",section:"새소식",content:`지금까지 구글 사이트를 통해 그놈 한국 웹사이트를 제공했는데, 이번에 새롭게 자체 홈페이지를 구축했습니다.
 이전 사이트를 계속 접속 가능합니다.
 https://sites.google.com/site/gnomekr/home 고맙습니다.
-`}),e.add({id:4,href:"/posts/archive_2001_0804_linux_programing_by_example/",title:"Linux Programming by example",section:"새소식",content:`출처
+`}),e.add({id:5,href:"/posts/archive_2001_0804_linux_programing_by_example/",title:"Linux Programming by example",section:"새소식",content:`출처
 글쓴이 : 키눅스 (2001년 08월 04일 오후 12:57) 읽은수: 319 [ 문서 / 책소개 ] 제목 : Linux Programming by Example 저자 : Wall Kurt 출판사 : Que 제가 표지 디자인을 무척 맘에 들어하는 책입니다. 그동안 사놓고 보지 않고 있다가.. 어제부터 보기 시작했는데.. 내용이 정말 좋더군요. C 언어를 어느정도 아신다면 리눅스 프로그래밍에 대한 개념및 실전 응용을 하는데 많은도움이 될 것 같습니다.(원서지만 영어도 그리 어렵지 않게.. 쉽게 읽어갈수 있습니다.)
 이 책은 C언어를 중심으로 설명하고 있어 리눅스 시스템 프로그래밍과 어플리케이션 개발의 특화된 리눅스 프로그래밍 관련 지식이 없더라도 쉽게 접근할 수 있다.
 http://www.wowbook.com/computer/book/info/book_detail.asp?isbn=ISBN0-7897-2215-1
@@ -28,7 +34,7 @@ http://www.wowbook.com/computer/book/info/book_detail.asp?isbn=ISBN0-7897-2215-1
 전체적으로 리눅스 환경에서 빠르게 프로그래밍 작업을 하는데 필요로 하는 것을 예제를 중심으로 기본기에 입각하여 제시하고 있는 책으로 강력한 리눅스 OS를 개발할 수 있도록 리눅스 프로그래밍의 환경을 사용자 정의 양식으로 조정할 수 있는 힘을 부여하고 있다. 이 책은 C언어를 중심으로 설명하고 있어 리눅스 시스템 프로그래밍과 어플리케이션 개발의 특화된 리눅스 프로그래밍 관련 지식이 없더라도 쉽게 접근할 수 있다.
 주로 GNU 개발 툴, 시스템 프로그래밍, 리눅스에서의 파일 처리, 인터프로세스 통신, 네트워크 프로그래밍과 애플리케이션 인터페이스, X윈도우 프로그래밍, 디버깅과 메모리 관리, 소프트웨어 버전 컨트롤 및 배포에 관한 주제들을 다룬다.
 총 6부 22장으로 구성된 이 책은 1부에서 리눅스 프로그래밍 환경에 대한 제반 사항과 GNU make를 사용한 프로세스 생성 및 컨트롤 등을 설명하고 있다. 2부에서는 시스템 프로그래밍에 대한 내용으로 프로세스, 시그널, 시스템 호출, 고급 파일 처리 기법 등에 대해 예제 프로그램을 기반으로 설명한다. 3부에서는 리눅스 API와 관련된 주제로 데이터베이스 API, ncurses로 화면 조작, 고급 ncurses 프로그래밍, 사운드 API 등에 대해 기술하고, 4부에서는 파이프와 FIFO, 메모리 공유, 세마포어와 메시지 큐 등 인터프로세스 통신에 대한 내용을 설명하고 있다. 5부와 6부에서는 리눅스 프로그래밍 유틸리티로 디버깅 툴을 사용하는 방법, 소프트웨어 분산, 소스 코드 변환 추적 등에 대해 \u0026lsquo;Music CD 데이터베이스\u0026rsquo;라는 프로젝트를 통해 실습하고 있다.
-`}),e.add({id:6,href:"/docs/develop/begin/",title:"Begin",section:"Develop",content:` 처음 시작하시는분을 위한 가이드 # 이 페이지에서는, 그놈(GNOME) 데스크탑 환경을 기반으로 하는 소프트웨어의 개발이나, 그놈(GNOME)을 더욱 풍성하게 만들어주는 공헌을 해주실 분을 위한 기초적인 가이드라인을 제시합니다.
+`}),e.add({id:7,href:"/docs/develop/begin/",title:"Begin",section:"Develop",content:` 처음 시작하시는분을 위한 가이드 # 이 페이지에서는, 그놈(GNOME) 데스크탑 환경을 기반으로 하는 소프트웨어의 개발이나, 그놈(GNOME)을 더욱 풍성하게 만들어주는 공헌을 해주실 분을 위한 기초적인 가이드라인을 제시합니다.
 그놈(GNOME) 프로그램 개발 개요 페이지를 통해, 그놈(GNOME) 데스크탑 환경을 구성하는 핵심 기술과, 내부 통신 방법, 데스크탑 편의성을 위한 기술등에 대해 학습하실 수 있습니다.
 그놈(GNOME) 데스크탑 환경에 공헌할 수 있는 방법들에 대한 요약 # 프로그래밍에 대한 지식이 필요없이, 아래와 같이 그놈(GNOME) 데스크탑 환경의 발전에 도움을 주실 수 있습니다:
 여러분이 사용하시는 그놈(GNOME) 플랫폼의 소프트웨어에 대한 문제를 발견하거나, 좀 더 나은 방향으로의 변화를 위하여 그놈 버그 트래커를 통해 버그를 보고할 수 있습니다. 버그 보고에 대한 자세한 사항을 버그 보고 방법(영문) 문서를 통해 알 수 있습니다.
@@ -40,7 +46,7 @@ http://www.wowbook.com/computer/book/info/book_detail.asp?isbn=ISBN0-7897-2215-1
 그놈 개발자 플랫폼 라이브러리(API) 문서에 대하여 # API 문서를 보기 위해, 첫째로 DevHelp를 사용하는 방법이 있습니다. 이 프로그램을 사용하여, 자신이 사용하는 현재 버전의 라이브러리에 대한 문서를 읽고, 검색할 수 있습니다. 또한, API 참고서 웹 페이지를 통해 그놈(GNOME) 플랫폼 기반의 프로그램을 작성하는데 도움을 줄 수 있는 최신 API 문서를 만나실 수 있습니다.
 기타 도움을 받을 수 있는 문서에 대하여 # 라이브러리 API에 대한 문서이외에도, 그놈 개발 안내서 와 초보자 지침서 및 예제 코드를 통해 좀 더 손쉽게 그놈(GNOME) 프로그래밍을 배울 수 있습니다.
 알림: 이 글은 원본 글을 수정한 것입니다.
-`}),e.add({id:7,href:"/docs/develop/i18n/",title:"I18n",section:"Develop",content:`오래된 문서입니다. 업데이트 예정입니다.
+`}),e.add({id:8,href:"/docs/develop/i18n/",title:"I18n",section:"Develop",content:`오래된 문서입니다. 업데이트 예정입니다.
 Gettext를 사용한 I18N 학습서 # 이 페이지에서는 GNU/Gettext 를 사용하여 Gtk+ 기반의 프로그램을 국제화시키는 방법에 대하여 언급하고자 한다.
 GNU gettext의 라이센스에 대하여 # GNU Gettext의 라이센스는 GPL이다, 허나 GPL은 Gettext PO파일을 다루는 프로그램에 적용되고, 프로그래밍에 사용되는 libintl 은 LGPL로 관리되고 있다. 인터페이스인 libintl.h 는 glibc에 적용되어 있기때문에, 이들 코드를 상용 소프트웨어를 만드는데 사용해도 상관이 없다고 할 수 있다.
 I18n, l10n 에 대하여 # 이 부분에 대해 더욱 자세한 사항을 알고 싶으면 다음의 페이지를 참고하길 바란다:
@@ -80,7 +86,7 @@ char *s = N_(\u0026#34;DomPDF HTML Shoveling Previewer 0.3Beta1 Release\u0026#34
 배열에 gettext 를 적용하려면 gettext_noop() 을 사용한다 # 배열에 gettext 번역을 적용하고 싶을 때는, gettext_noop()을 사용한다. 어차피 gettext_noop은 xgettext 프로그램을 위한 코드이므로, C 컴파일러에서 안전하게 처리 될 수 있도록 미리 매크로 축약을 구성하도록 한다.
 /* gettext_noop()을 배열에 적용할때 컴파일러에서 안전하게 처리되도록 하기 위한 매크로와, * 그것의 매크로 축약을 정의해둔다 */ #define N_(String) gettext_noop(String) #define gettext_noop(String) (String) static const char *err_messages[] = { N_(\u0026#34;Errno 1: File not found\u0026#34;), N_(\u0026#34;Errno 2: Cannot execute execl(), bugs?\u0026#34;) }; 그리고 xgettext를 사용할때는 -kN_ 으로 키워드를 추가해놓는 것이 좋다. :)
 출처: https://web.archive.org/web/20070528043820/http://www.gnome.or.kr/c/portal/layout?p_l_id=PUB.1.88
-`}),e.add({id:8,href:"/docs/gnome_history/gimp_gtk/",title:"Index",section:"Docs",content:`그놈 프로젝트는 김프라는 그림 편집 및 그리기 도구 개발에서 시작한다. 아래 만화를 통해 김프 프로젝트의 시작과 김프에서 어떻게 Gtk+ 프로젝트가 시작되었는지 확인할 수 있다.
+`}),e.add({id:9,href:"/docs/gnome_history/gimp_gtk/",title:"Index",section:"Docs",content:`그놈 프로젝트는 김프라는 그림 편집 및 그리기 도구 개발에서 시작한다. 아래 만화를 통해 김프 프로젝트의 시작과 김프에서 어떻게 Gtk+ 프로젝트가 시작되었는지 확인할 수 있다.
 김프(GIMP)의 탄생 # 1995년 스펜서 킴벨(Spencer Kimball)과 피터 매티스(Peter Mattis)는 UC 버클리에서 전산학을 공부하고 있었다.
 “LISP 컴파일러 과제 시작했어?”
 “컴파일러 보다 다른 것을 만들어보고 싶어.”
@@ -145,16 +151,16 @@ GPL 적용 # “오~ 기특한 두 젊은이기 포토샵 대체 프로그램을
 현재 김프는 리눅스, 맥OSX, 윈도, BSD, 솔라리스를 지원하며 대표적인 오픈소스 그래픽 소프트웨어로 자리잡았다.
 그놈(GNOME) 프로젝트 # 일부 김프 개발자가 독자적인 프로젝트로 GTK+를 분리시켰고 이를 기반으로 또다른 오픈소스 데스크탑 프로젝트인 그놈(GNOME) 프로젝트가 탄생하게 된다. 이에 대한 이야기는 다음에 소개할 예정이다.
 두 사람은 이후 구글에서 함께 일하면서 구글 파일시스템, 서블릿 엔진 등 개발에 참여했고 Viewfinder라는 스타업을 만들어 스퀘어에 매각했다. 현재는 함께 새로운 스타트업에서 구글 빅테이블의 오픈소스 버전인 CockroachDB를 만들고 있다.
-참고 # A Brief (and Ancient) History of GIMP, gimp.org 김프, 위키피디아 (한국어, 영문) 인터뷰 기사, 1997년 1월, https://www.xach.com/gg/1997/1/profile/1/ 김프 튜토리얼(링크) `}),e.add({id:9,href:"/docs/gnome_history/gnome_kr_home/",title:"Index",section:"Docs",content:` 그놈 한국 홈페이지 변천사 # 2007년 2월 20일 # https://web.archive.org/web/20070220235717/http://gnome.or.kr/
+참고 # A Brief (and Ancient) History of GIMP, gimp.org 김프, 위키피디아 (한국어, 영문) 인터뷰 기사, 1997년 1월, https://www.xach.com/gg/1997/1/profile/1/ 김프 튜토리얼(링크) `}),e.add({id:10,href:"/docs/gnome_history/gnome_kr_home/",title:"Index",section:"Docs",content:` 그놈 한국 홈페이지 변천사 # 2007년 2월 20일 # https://web.archive.org/web/20070220235717/http://gnome.or.kr/
 2006년 7월 11일 # 2003년 10월 30일 # 2002년 3월 30일 # https://web.archive.org/web/20020524140742/http://gnome.or.kr/
-`}),e.add({id:11,href:"/docs/projects/gnome-kr-l10n/",title:"Gnome Kr L10n",section:"Projects",content:` 그놈 한글화 프로젝트 # 그놈 한글화 프로젝트는 그놈 프로젝트에서 개발하는 애플리케이션을 한글화하는 프로젝트입니다. 여러분이 그놈을 기반으로한 우분투 리눅스를 설치할 때, 한글을 선택하면 모든 메뉴가 한글로 나타나는데, 이 프로젝트의 결과물입니다. 현재 프로젝트 멤버는 다음 같습니다.
+`}),e.add({id:12,href:"/docs/projects/gnome-kr-l10n/",title:"Gnome Kr L10n",section:"Projects",content:` 그놈 한글화 프로젝트 # 그놈 한글화 프로젝트는 그놈 프로젝트에서 개발하는 애플리케이션을 한글화하는 프로젝트입니다. 여러분이 그놈을 기반으로한 우분투 리눅스를 설치할 때, 한글을 선택하면 모든 메뉴가 한글로 나타나는데, 이 프로젝트의 결과물입니다. 현재 프로젝트 멤버는 다음 같습니다.
 감독자: 류창우(Changwoo Ryu) 검토자: 조성호(Seong-ho Cho) 번역 맹진영(Jinyeong Maeng) AlexKodala 엄지용(Jeeyong Um) 문관경(Gwan-gyeong Mun) 신현수(Hyunsu Shin) 성대현(DaeHyun Sung) 아직도 한글화할 부분이 많습니다. 참여를 원하는 분은 아래 프로젝트 페이지를 방문하시기 바랍니다.
-https://l10n.gnome.org/teams/ko/ `}),e.add({id:13,href:"/docs/gnome_history/korea/",title:"HOME",section:"Docs",content:` 그놈 한국(GNOME KOREA) # 그놈 한국 홈페이지에서 오신 것을 환영합니다!
+https://l10n.gnome.org/teams/ko/ `}),e.add({id:14,href:"/docs/gnome_history/korea/",title:"HOME",section:"Docs",content:` 그놈 한국(GNOME KOREA) # 그놈 한국 홈페이지에서 오신 것을 환영합니다!
 그놈(GNOME) 프로젝트는 자유롭게 소소코드를 고치고 배포할 수 있으며 누구나 개발에 참여할 수 있는 운영체제 데스크탑 환경과 어플리케이션 프레임워크를 만들고 있습니다.
 그놈은 GNU 프로젝트의 일부이며, 자유 소프트웨어입니다(흔히, 오픈소스 소프트웨어라고 불립니다). 그놈은 BSD 유닉스와 우분투, 페도라와 같은 GNU/리눅스 배포본에서 사용할 수 있으며, 다른 여러 유닉스 시스템에서도 작동합니다. 또한 그놈 애플리케이션 프레임워크는 윈도와 매킨토시 OSX를 지원하고 있어서, 한번 개발한 그놈 애플리케이션을 여러 운영체제용으로 컴파일해서 실행할 수 있습니다.
 그놈 한국은 그놈 프로젝트의 한글화 및 한글 지원을 위한 커뮤니티입니다.
 많은 참여와 관심 바랍니다.
-바깥고리 # 그놈 한국 블로그 그놈 한국 구글 그룹 그놈 한국 Facebook 그놈 한국 GIT 저장소 GNOME Project # GNOME Project Planet GNOME Twitter Bugzilla Gitlab IRC 접속 # irc.ozinger.org #gnome 채널 irc.freenode.net #gnome-kr 채널 자유소프트웨어 공동체 # 한국 리눅스 문서화 프로젝트(KLDP) 한국 모질라 공동체 한국 우분투 공동체 GNOME Conference # GUADEC 2022 GUADEC 2021 GUADEC 2020 GUADEC 2019 `}),e.add({id:14,href:"/docs/develop/architecture/",title:"그놈(GNOME) 플랫폼 아키텍쳐 개관",section:"Develop",content:` 그놈(GNOME) 플랫폼 아키텍쳐 개관 # 이 문서는 그놈 플랫폼에서 사용하는 구조/기술들에 대한 내용을 다루게 됩니다. 아래의 내용을 바탕으로, 전체적인 그놈 데스크탑 환경의 배경이 되는 아키텍쳐를 이해하여 사용자/어플리케이션 개발자들이 어떠한 방향으로 접근해나가야 할 것인지에 대한 사항을 다루게 됩니다.
+바깥고리 # 그놈 한국 블로그 그놈 한국 구글 그룹 그놈 한국 Facebook 그놈 한국 GIT 저장소 GNOME Project # GNOME Project Planet GNOME Twitter Bugzilla Gitlab IRC 접속 # irc.ozinger.org #gnome 채널 irc.freenode.net #gnome-kr 채널 자유소프트웨어 공동체 # 한국 리눅스 문서화 프로젝트(KLDP) 한국 모질라 공동체 한국 우분투 공동체 GNOME Conference # GUADEC 2022 GUADEC 2021 GUADEC 2020 GUADEC 2019 `}),e.add({id:15,href:"/docs/develop/architecture/",title:"그놈(GNOME) 플랫폼 아키텍쳐 개관",section:"Develop",content:` 그놈(GNOME) 플랫폼 아키텍쳐 개관 # 이 문서는 그놈 플랫폼에서 사용하는 구조/기술들에 대한 내용을 다루게 됩니다. 아래의 내용을 바탕으로, 전체적인 그놈 데스크탑 환경의 배경이 되는 아키텍쳐를 이해하여 사용자/어플리케이션 개발자들이 어떠한 방향으로 접근해나가야 할 것인지에 대한 사항을 다루게 됩니다.
 GTK+ # GTK+ 는 그놈이 사용하는 기본 위젯 툴킷(base widget toolkit, 주: 버튼, 스크롤바, 입력창등이 위젯에 해당합니다) 라이브러리 입니다. 원래 GIMP 프로젝트로부터 파생되었고, 대부분의 코드는 C로 작성되었지만 수많은 언어 바인딩을 지원, C++, Python, JavaScript, Rust 등에서도 사용할 수 있습니다.
 Glib # GLib 라이브러리는, C 언어에서 보다 더 편리한 기능적 요소를 제공해주고 있습니다. GLib은 GTK+ 를 포함, 그놈 프로젝트의 많은 프로그램 구석구석에서 사용됩니다. 그놈에서는 GLib을 사용하는 것으로 다음의 4가지 기능을 얻을 수 있었습니다.
 첫째, 이식성(Portability)입니다. 예를 들어 보자면, 몇몇 C 라이브러리에서는 제공하지만, 또 다른 몇몇 C 라이브러리에서 제공하지 않는 함수들을 제공합니다. 예를 들어볼까요? GLib에는 g_ascii_strcasecmp() 와 g_memmove() 같은 함수가 있습니다. 같은 기능을 하는 함수가 glibc에도 있습니다. strcasecmp() 와 memmove() 가 똑같은 기능을 제공합니다. 만약 기본 C 라이브러리로 glibc를 사용하는 플랫폼이라면 g_ascii_strcasecmp() 와 g_memmove()를 호출시 glibc로 구현되어 있는 함수의 wrapper 역할을 하게 될테지만, 저런 함수를 제공하지 않는 C 라이브러리를 사용하는 플랫폼이라면, 앞의 두 함수를 호출 시 GLib에서 이식성있게 새로 구현해놓은 코드를 사용하게 합니다. 이런 라이브러리를 사용하는 것으로, 프로그래머가 여러가지 플랫폼을 위해 신경쓰는 일을 줄여줄 수 있습니다.
